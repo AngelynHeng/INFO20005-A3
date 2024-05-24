@@ -72,6 +72,8 @@ nav {
 @media(max-width: 770px){
     .navcontent{
         justify-content: space-evenly;
+        padding-left: 10px;
+        padding-right: 3px;
     }
     .logo{
         display: none;
@@ -82,6 +84,6 @@ nav {
     }
 
     .navigation{
-        width: 100px;
+        width: 110px;
     }
 }
