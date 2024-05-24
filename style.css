@@ -124,7 +124,7 @@ footer > section{
     justify-content: center;
 }
 
-.Back_To_Top > p{
+.BackToTop > p{
     height:20px ;
     align-self: center;
     padding-top: 2px;
@@ -133,7 +133,7 @@ footer > section{
 }
 
 
-.Back_To_Top{
+.BackToTop{
 
     padding-top: 10px;
     padding-bottom: 10px;
