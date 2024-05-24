@@ -1,17 +1,23 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     padding: 0;
+    padding-top: 65px;
     min-height: 100vh;
     text-align: center;
 }
 
 nav {
-
+    top: 0;
+    position: fixed;
+    width: 100%;
     background: #F9EDDD;
-    padding-left: 20px;
-    padding-right: 20px;
     display: flex;
     justify-content: center;
+    z-index: 9999;
     
 }
 
@@ -55,6 +61,7 @@ nav {
 .search-input{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    min-width: 69px;
     color: #333333;
     margin: 10px;
     outline: none;
@@ -87,3 +94,51 @@ nav {
         width: 110px;
     }
 }
+
+/* Back to top & Footer */
+
+section {
+    width: 100%;
+    height: 400px;
+}
+
+footer > section{
+    background-color: #F9EDDD;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.copyright {
+    display: flex;
+    padding: 0;
+    height: 50px;
+    justify-content: center;
+    background-color: black;
+}
+
+.copyright > p{
+    height:20px ;
+    align-self: center;
+    color: #FFFFFF;
+    margin: 0;
+    justify-content: center;
+}
+
+.Back_To_Top > p{
+    height:20px ;
+    align-self: center;
+    padding-top: 2px;
+    margin: 0;
+    justify-content: center;
+}
+
+
+.Back_To_Top{
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    height: 50px;
+    justify-content: center;
+}
+
