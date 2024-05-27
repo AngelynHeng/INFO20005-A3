@@ -1,6 +1,8 @@
 html{
     scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 
 body{
     margin: 0;
@@ -80,24 +82,6 @@ nav {
     justify-content: space-evenly;
 }
 
-@media(max-width: 770px){
-    .navcontent{
-        justify-content: space-evenly;
-        padding-left: 10px;
-        padding-right: 3px;
-    }
-    .logo{
-        display: none;
-    }
-
-    .smalllogo{
-        display: flex;
-    }
-
-    .navigation{
-        width: 110px;
-    }
-}
 
 /* Back to top & Footer */
 
@@ -184,4 +168,137 @@ footer > section{
 
 .banner:nth-child(4) > span{
     color: #F33E45;
+}
+
+.order_summary_wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.order_summary{
+
+    border:2px solid #EBEBEB;
+    border-radius: 15px;
+    margin-inline: 1.5rem;;
+    padding: 32px 20px 20px 20px;
+    width: 400px;
+    height: 480px;
+    justify-self: center;
+    font-size: large;
+    text-transform: uppercase;
+
+}
+
+
+.order_summary_content{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px 15px 0px
+}
+
+.order_summary_content:first-of-type{
+    margin-top: 0px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.order_summary_content:nth-child(10){
+    font-weight: bold;
+}
+
+
+.email_input{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 20px;
+}
+
+.email_input > div{
+    align-self: flex-start;
+}
+
+.payment_option{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    row-gap: 15px;
+}
+
+.form_header{
+    display: flex;
+    justify-content: center;
+}
+
+.form_header > h1{
+    width: 420px;
+    text-align: start;
+    margin-bottom: 30px;
+}
+
+.form_header > .form_icon{
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+    margin-top: 50px;
+}
+
+.form_icon > img{
+    width: 16px;
+}
+
+button{
+    margin: 30px;
+    width: 180px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #000000;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    padding: 15px 32px;
+    cursor: pointer;
+}
+
+.summary_footer{
+    width: 100%;
+    height: 140px;;
+}
+
+@media(max-width: 770px){
+    .navcontent{
+        justify-content: space-evenly;
+        padding-left: 10px;
+        padding-right: 3px;
+    }
+    .logo{
+        display: none;
+    }
+
+    .smalllogo{
+        display: flex;
+    }
+
+    .navigation{
+        width: 110px;
+    }
+
+    .order_summary{
+        min-width: 300px;
+        max-height: 450px;
+        font-size: small;
+
+    }
+
+    .form_header > .form_icon{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .form_header > h1 {
+        margin-left: 30px;
+
+    }
 }

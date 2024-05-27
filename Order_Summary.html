@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <nav>        
+            <div class="navcontent">
+ 
+                 <div class="menu">
+                     <img src="Images/Menu.svg" class="icon">
+                  </div>
+ 
+                 <div class="logo">
+                     <img src="Images/Large Logo.svg">
+                 </div>
+                 <div class="smalllogo">
+                     <img src="Images/small Logo.svg" class="smalllogo">
+ 
+                 </div>
+                 <div class="search"> 
+                     <img src="Images/Search.svg" class="icon">
+                     <input class="search-input" type="search" placeholder=Search>
+     
+                 </div>
+     
+                 <div class="navigation">
+                     <img src="Images/profile.svg" class="icon">
+                     <img src="Images/Heart.svg" class="icon">
+                     <img src="Images/Cart.svg" class="icon">
+                 </div>      
+             </div>
+    
+         </nav>
+    </header>
+
+    <main>
+
+        <div class="form_header">
+            <div class="form_icon">
+                <img src="Images/back.svg" class="icon">
+                <img src="Images/cross.svg" class="icon">
+            </div>
+
+        </div>
+
+        <div class="form_header">
+            <h1> Your Order</h1>
+        </div>
+      
+        <div class="order_summary_wrapper">
+            <form action="" class="order_summary">
+
+                <div class="order_summary_content">
+
+                    <span> Product </span>
+                    <span> Subtotal </span>
+        
+                </div>
+                <hr class="solid">
+                <div class="order_summary_content">
+                    <span> Digital Birthday Card No.201 x 1 </span>
+                    <span> $10.00 </span>
+                </div>
+                <hr class="solid">
+                <div class="order_summary_content">
+                    <span> Subtotal </span>
+                    <span> $10.00 </span>
+                </div>
+                <hr class="solid">
+                <div class="order_summary_content">
+                <span> Shipping </span>
+                <span> Free (Via Email) </span>
+                </div>
+
+                <hr class="solid">
+
+                <div class="email_input">
+                    <div> Please provide email </div>
+                    <input type="email">
+                </div>
+            
+                <div class="order_summary_content">
+                    <span> Total </span>
+                    <span> $10.00 </span>
+                </div>
+            
+                <div class="payment_option">
+
+                    <div class="payment_radio">
+                        <input type="radio" id="DBT" name="payment_option" value="direct_bank_transfer">
+                        <label for="DBT">Direct Bank Transfer</label>
+                    </div>
+                    
+                    <div class="payment_radio">
+                        <input type="radio" id="paypal" name="payment_option" value="paypal">
+                        <label for="DBT">Paypal</label>
+                    </div>
+                    
+                    <div class="payment_radio">
+                        <input type="radio" id="credit_cards" name="payment_option" value="credit_cards">
+                        <label for="DBT">Credit cards</label>
+                    </div>
+
+                    <div class="payment_radio">
+                        <input type="radio" id="FPX" name="payment_option" value="FPX_online_banking">
+                        <label for="DBT">FPX online banking</label>
+                    </div>
+                    
+                </div>
+    
+            </form>
+        </div>
+
+        <button> Place Order </button>
+
+
+        </div>
+    </main>
+
+
+    <footer>
+
+        <div class="summary_footer"></div>
+
+    </footer>
+</body>
+</html>
