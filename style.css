@@ -1,5 +1,10 @@
+/* importing css files */
 
-@import url(typography.css);
+@import url(reset.css);  /* Reseting css style */
+
+@import url(typography.css); /* Fonts style, spacing, line height  */
+ 
+@import url(color.css);
 
 
 html{
