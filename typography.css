@@ -1,0 +1,83 @@
+:root{
+
+    /* Declaring variables for two main fonts */
+    --font-primary: 'Lemonmilk';
+    --font-secondary: 'Narnia';
+
+    /* setting base values */
+    --text-base-size: 1rem;
+
+    /* type scale */
+    --text-scale-ratio: 1.2;
+    --text-xs: calc(1rem / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+    --text-sm: calc(1rem / var(--text-scale-ratio));
+    --text-md: calc(1rem * var(--text-scale-ratio));
+    --text-lg: calc(1rem * var(--text-scale-ratio));
+    --text-xl: calc(1rem * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xxl: calc(1rem * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xxxl: calc(1rem * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+
+    /* spacing */
+    --space-xxxs: 0.25em;
+    --space-xxs: 0.375em;
+    --space-xs: 0.5em;
+    --space-sm: 0.74em;
+    --space-md: 1.25em;
+    --space-lg: 2em;
+    --space-xl: 3.25em;
+    --space-xxl: 5.25em;
+    --space-xxxl: 8.5em;
+
+    /* line-height */
+    --heading-line-height: 1.2;
+    --body-line-height: 1.4;
+
+    text-transform: uppercase;
+
+}
+
+
+@font-face {
+    font-family: 'Narnia';
+    src: url(Fonts/narnia-webfont.woff) format('woff'),
+    url(Fonts/narnia-webfont.woff2) format('woff2');
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face{
+    font-family:'Lemonmilk';
+    src: url(Fonts/lemonmilk-regular-webfont.woff) format('woff'),
+    url(Fonts/lemonmilk-regular-webfont.woff2) format('woff2');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Lemonmilk';
+    src: url(Fonts/lemonmilk-bold.woff) format('woff'),
+    url(Fonts/lemonmilk-bold.woff2) format('woff2');
+    font-style: normal;
+    font-weight: 700;
+}
+
+body{
+    font-size: var(--text-base-size);
+    font-family: var(--font-primary);
+    line-height: var(--body-line-height);
+
+
+}
+
+h1, h2, h3, h4{
+    font-family: var(--font-secondary);
+    font-size: var(--text-xxxl);
+    margin-bottom: var(--space-xxxs);
+    line-height: var(--heading-line-height);
+    color: #E79E48;
+}
+
+p, .text--xs{
+    font-family: var(--font-primary);
+    font-size: var(--text-sm);
+}
