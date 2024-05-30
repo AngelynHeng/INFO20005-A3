@@ -1,0 +1,16 @@
+
+button {
+    cursor: pointer;
+    border: none;
+    width: fit-content;
+    padding: 18px 50px;
+    font-family: 'Lemonmilk';
+    text-transform: uppercase;
+    align-self: center;
+    font-weight: bold;
+    height: max-content;
+    border-radius: 18px;
+    text-align: center;
+    color: white;
+
+}

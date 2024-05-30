@@ -8,6 +8,7 @@
     --text-base-size: 2rem;
 
     /* type scale */
+    /* CHANGE!! */
     --text-scale-ratio: 1.2;
     --text-xs: calc(1rem / (var(--text-scale-ratio) * var(--text-scale-ratio)));
     --text-sm: calc(1rem / var(--text-scale-ratio));
@@ -19,7 +20,13 @@
     
     /* type scale for secondary font */
     
-    --heading-size: calc(6rem * var(--text-scale-ratio) * var(--text-scale-ratio));
+    /* XXL SIZE (HEADING) */
+    --heading-size: calc(5.5rem * var(--text-scale-ratio) * var(--text-scale-ratio)); 
+
+    /* XL SIZE (Special) */
+    --special-size: calc(4rem * var(--text-scale-ratio) * var(--text-scale-ratio)); 
+
+    /* L SIZE (subheading, etc) */
     --subheading-size: calc(2.5rem * var(--text-scale-ratio) * var(--text-scale-ratio));
 
 
@@ -78,13 +85,18 @@ body{
 h1{
     font-family: var(--font-secondary);
     font-size: var(--heading-size);
-    margin-bottom: var(--space-xxxs);
     line-height: var(--heading-line-height);
     color: #E79E48;
 }
 
+h2{
+    font-family: var(--font-secondary);
+    font-size: var(--special-size);
+    line-height: var(--heading-line-height);
+    color: white;
+}
 
-h2, h3, h4{
+h3, h4{
     font-family: var(--font-secondary);
     font-size: var(--subheading-size);
     margin-bottom: var(--space-xxxs);
