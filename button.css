@@ -1,16 +1,36 @@
+/* deafault button / larger ver of button used for  */
 
 button {
-    cursor: pointer;
-    border: none;
+
     width: fit-content;
-    padding: 18px 50px;
-    font-family: 'Lemonmilk';
-    text-transform: uppercase;
-    align-self: center;
-    font-weight: bold;
     height: max-content;
+    cursor: pointer;
+
+    border: none;
     border-radius: 18px;
+    padding: 18px 50px;
+
+    font-family: 'Lemonmilk';
     text-align: center;
+    background-color: black;
     color: white;
+    font-size: var(--text-md);
+    text-transform: uppercase;
+    font-weight: bold;
+
+    align-self: center;
+
+
+}
+
+
+/* Smaller button used for "add to cart", "all product" etc */
+
+.smaller_button {
+
+    font-size: var(--text-sm);
+    font-weight: 600;
+    padding: 12px 40px;
+    background-color: #64A3E0;
 
 }

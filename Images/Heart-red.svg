@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 187.87 177.65">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-2 {
+        fill: #000;
+      }
+
+      .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-3 {
+        fill: #f97d84;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="5.94" y=".65" width="176.19" height="176.19"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-1" x="5.94" y=".65" width="176.19" height="176.19"/>
+    </clipPath>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g class="cls-5">
+      <g id="Heart">
+        <path id="Heart-2" class="cls-2" d="M168.05,25.7c-18.38-18.61-48.36-18.79-66.96-.42-.14.14-.28.28-.42.42l-6.61,6.61-6.61-6.61c-18.62-18.63-48.82-18.64-67.45-.02-18.63,18.62-18.64,48.82-.02,67.45l74.01,74.01,74.01-74.01c18.61-18.38,18.79-48.36.42-66.96-.14-.14-.28-.28-.42-.42"/>
+        <rect id="Rectangle_1450" data-name="Rectangle 1450" class="cls-1" x="5.94" y=".65" width="176.19" height="176.19"/>
+      </g>
+    </g>
+  </g>
+  <g id="Layer_12" data-name="Layer 12">
+    <g class="cls-4">
+      <g id="Heart-2" data-name="Heart">
+        <path id="Heart-2-2" data-name="Heart-2" class="cls-3" d="M168.05,25.7c-18.38-18.61-48.36-18.79-66.96-.42-.14.14-.28.28-.42.42l-6.61,6.61-6.61-6.61c-18.62-18.63-48.82-18.64-67.45-.02-18.63,18.62-18.64,48.82-.02,67.45l74.01,74.01,74.01-74.01c18.61-18.38,18.79-48.36.42-66.96-.14-.14-.28-.28-.42-.42"/>
+        <rect id="Rectangle_1450-2" data-name="Rectangle 1450" class="cls-1" x="5.94" y=".65" width="176.19" height="176.19"/>
+      </g>
+    </g>
+  </g>
+</svg>

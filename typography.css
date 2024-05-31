@@ -11,7 +11,7 @@
     /* CHANGE!! */
     --text-scale-ratio: 1.2;
     --text-xs: calc(1rem / (var(--text-scale-ratio) * var(--text-scale-ratio)));
-    --text-sm: calc(1rem / var(--text-scale-ratio));
+    --text-sm: calc(1.2rem / var(--text-scale-ratio));
     --text-md: calc(1rem * var(--text-scale-ratio));
     --text-lg: calc(1rem * var(--text-scale-ratio));
     --text-xl: calc(1rem * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
@@ -104,7 +104,7 @@ h3, h4{
     color: #E79E48;
 }
 
-p, .text--xs{
+p {
     font-family: var(--font-primary);
     font-size: var(--text-sm);
     
