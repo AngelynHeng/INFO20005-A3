@@ -473,6 +473,27 @@ body{
     height: 25px;
 }
 
+/* Product List Page */
+
+.product_list_header{
+
+    width:800px;
+    text-align: left;
+
+}
+
+.product_list_header > h3{
+    padding:40px 0px 0px 10px;
+}
+
+.product_list_header > p{
+    padding-left: 10px;
+    color: #AAAAAA;
+}
+.product_list_header > .icon_wrapper{
+
+    width: 800px;
+}
 
 
 @media(max-width: 770px){

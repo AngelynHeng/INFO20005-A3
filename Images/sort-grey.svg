@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_16" data-name="Layer 16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 187.87 177.65">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #707070;
+      }
+    </style>
+  </defs>
+  <path id="Menu-2" class="cls-2" d="M6.35,169.65v-22.86h110.01v22.86H6.35ZM6.35,101.08v-22.86h176v22.86H6.35ZM6.35,32.51V9.65h176v22.86H6.35Z"/>
+  <rect id="Rectangle_1446" data-name="Rectangle 1446" class="cls-1" x="6.35" y="1.65" width="176" height="176"/>
+</svg>
