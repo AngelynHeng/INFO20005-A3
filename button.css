@@ -34,3 +34,16 @@ button {
     background-color: #64A3E0;
 
 }
+
+/* Even smaller button for mobile resolution */
+
+.xs_button{
+    
+
+    font-size: var(--text-xs);
+    font-weight: 500;
+    padding: 8px 15px;
+    background-color: #64A3E0;
+
+
+}
