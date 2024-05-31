@@ -1,0 +1,149 @@
+/* Navigation Bar  */
+nav {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background: #F9EDDD;
+    display: flex;
+    justify-content: center;
+    z-index: 9999;
+    box-shadow: 3px 3px 8px 1px rgba(76, 76, 76, 0.1);
+    
+}
+
+.navcontent{
+    display: flex;
+    height: 65px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 1000px;
+
+}
+
+.navigation{
+    display: flex;
+    height: 60px;
+    width: 160px;
+    justify-content: space-evenly;
+}
+
+
+
+/* Footer */
+
+/* Big Footer */
+
+.footercontent{
+
+    background-color: #F9EDDD;
+    padding: 40px;
+    margin: 0;
+    gap: 12px;
+    flex-direction: column;
+
+
+}
+
+.footer_main_text{
+
+    display: grid;
+    grid-template-rows: 60px 60px 40px;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+
+}
+
+.footer_main_text > p{
+
+    font-size: var(--space-md);
+    color: #DA9449
+}
+
+.footer_main_text > h3 {
+
+    color: black;
+}
+
+.footercontent > p{
+
+    line-height: 24px;
+    color: #DA9449
+
+}
+
+.footercontent >p:last-of-type{
+
+    padding-bottom: 40px;
+}
+
+/* Copyright Section */
+
+.copyright {
+
+    padding:0;
+    height:30px;
+    background-color:black;
+}
+
+.copyright > p{
+
+    color:#FFFFFF;
+}
+
+
+/* Back-to-top section */
+
+.Back_To_Top{
+
+    flex-direction: column;
+    display: flex;
+
+    padding-top:17px;
+    padding-bottom:15px;
+    justify-content:center;
+    height:50px;
+}
+
+.Back_To_Top > a {
+    height: 25px;
+}
+
+/* Footer & Navigation bar icons */
+
+
+.icon_wrapper{
+
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+
+}
+
+
+/* Copyright Footer (Stick to bottom) */
+
+.copyright_footer{
+
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    width: 100%;
+    height: 30px;
+    background-color: #000000;
+    color: #FFFFFF;
+    justify-content:center;
+
+}
+
+.copyright_footer > p{
+    height:20px ;
+    align-self:center;
+    color:#FFFFFF;
+    margin:0;
+    justify-content:center;
+}
+
+
