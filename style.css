@@ -293,12 +293,21 @@ body{
 }
 
 .content_container > .text{
-    grid-area: desc;
-    grid-column-start: 2;
-    grid-column-end: 4;
+
     font-size: var(--text-md);
     text-align: left;
     line-height: var(--body-line-height);
+}
+
+.content_container > #description_text{
+
+    grid-area: desc;
+    grid-column-start: 2;
+
+}
+
+.content_container > #small_logo {
+    display: none;
 }
 
 /* Section 2 Homepage */
@@ -521,33 +530,54 @@ body{
 
 
 @media(max-width: 770px){
-  
-    .order_summary{
-        min-width: 300px;
-        max-height: 450px;
-        font-size: small;
 
-    }
-
-    .form_header > .form_icon{
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-
-    .form_header > h1 {
-        margin-left: 30px;
-
-    }
-
-    .main_image{
-        background: url(Images/homepage-image-small.svg) no-repeat center;
-        background-size: cover;
-        height: 430px;
+    .content_container > #small_logo {
+        grid-area: logo;
+        justify-self: center;
+        display: block;
     }
 
     .product_banner_container{
+
         overflow: scroll;
-        margin-right: 0px;
+        margin-right: 0;
     }
+
+    .main_image{
+        position: relative;
+        background: url(Images/homepage-image-small.svg) no-repeat center;
+        background-size: cover;
+        width: 100%;
+        max-width: 1400px;
+        overflow: hidden;
+        align-content: center;
+    
+    }
+
+    .content_container{
+        grid-template-columns: 160px 110px 110px;
+        grid-template-rows: 20px 135px 70px 45px 170px;
+        grid-template-areas: 
+            "logo logo logo"
+            "subtext subtext subtext"
+            "heading heading heading"
+            "button button button"
+            "desc desc desc";
+    }
+
+    .content_container > .text{
+        font-size: var(--text-xs);
+        line-height: 1.5;
+        padding-top: 10px;
+        padding-left: 8px;
+        padding-right: 15px;
+    }
+
+    .content_container > .subtext{
+
+        font-size: var(--text-xs);
+
+    }
+  
 
 }
