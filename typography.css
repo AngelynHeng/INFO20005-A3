@@ -10,8 +10,8 @@
     /* type scale */
     /* CHANGE!! */
     --text-scale-ratio: 1.2;
-    --text-xs: calc(1rem / (var(--text-scale-ratio) * var(--text-scale-ratio)));
-    --text-sm: calc(1.2rem / var(--text-scale-ratio));
+    --text-xs: calc(1.1rem / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+    --text-sm: calc(1.3rem / var(--text-scale-ratio));
     --text-md: calc(1rem * var(--text-scale-ratio));
     --text-lg: calc(1rem * var(--text-scale-ratio));
     --text-xl: calc(1rem * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
@@ -27,7 +27,7 @@
     --special-size: calc(4rem * var(--text-scale-ratio) * var(--text-scale-ratio)); 
 
     /* L SIZE (subheading, etc) */
-    --subheading-size: calc(2.5rem * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --subheading-size: calc(3rem * var(--text-scale-ratio) * var(--text-scale-ratio));
 
 
     /* spacing */
@@ -99,7 +99,6 @@ h2{
 h3, h4{
     font-family: var(--font-secondary);
     font-size: var(--subheading-size);
-    margin-bottom: var(--space-xxxs);
     line-height: var(--heading-line-height);
     color: #E79E48;
 }
@@ -108,4 +107,8 @@ p {
     font-family: var(--font-primary);
     font-size: var(--text-sm);
     
+}
+
+.text--xs{
+    font-size: var(--text-xs);
 }

@@ -107,6 +107,12 @@ section{
 
     margin-top: 40px;
     margin-bottom: 40px;
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
 }
 
 footer{
@@ -172,6 +178,7 @@ footer > section {
 .banner > span {
 
     font-weight: bolder;
+    padding-top: 4px;
     font-size: larger;
     text-transform:uppercase;
     color: #EDCCA5;
@@ -343,7 +350,8 @@ footer > section {
     position: relative;
     background: url(Images/homepage-image-large.svg) no-repeat center;
     background-size: cover;
-    height:600px;
+    width: 100%;
+    max-width: 1400px;
     overflow: hidden;
     align-content: center;
 
@@ -396,6 +404,12 @@ footer > section {
 }
 
 /* Section 2 Homepage */
+
+.homepage_button_container{
+
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
 
 .homepage_button{
     
@@ -461,13 +475,19 @@ footer > section {
 .e_cards_button {
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     grid-area: button;
     grid-column-start: 1;
     grid-row-start: 2;
-    align-self: flex-end;
+    align-self: center;
+    gap: 7px;
 
 
+}
+
+.e_cards_button > button{
+
+    padding: 12px 30px 10px;
 }
 
 .cake , .other{
@@ -503,6 +523,11 @@ footer > section {
 
 /* Product Banner */
 
+.product_banner {
+
+    flex-direction: column;
+}
+
 .product_banner_container{
 
     display:flex;
@@ -510,9 +535,15 @@ footer > section {
     gap: 15px;
     margin: 20px;
     padding:0;
-    height:400px;
+    height:520px;
     align-items: center;
-    background-color:#F9EDDD;
+    justify-content: space-around;
+}
+
+.product_banner_subheading{
+
+    display: grid;
+    grid-template-rows: 65px 20px;
 }
 
 /* individual product listing */
@@ -522,18 +553,19 @@ footer > section {
 .product_box{
 
     display: grid;
-    grid-template-rows: 300px 30px 30px 50px;
-    grid-template-columns: 200px 50px;
+    grid-template-rows: 382px 30px 30px 50px;
+    grid-template-columns: 190px 40px;
     grid-template-areas: 
         "picture picture"
         "card_name card_name"
         "card_code card_code"
         "add_to_cart_button heart_icon";
+    text-align: left;
 }
 
 .product_box > img:first-of-type{
 
-    height: 300px;
+    width: 240px; 
     grid-area: picture;
 }
 
@@ -548,12 +580,47 @@ footer > section {
 
 .product_box > button{
     grid-area: add_to_cart_button;
+    padding: 10px 20px;
 }
 
+.product_box > .icon{
+
+    align-self: center;
+    justify-self: right;
+    
+
+}
 .product > img:last-of-type{
+    
     grid-area: heart_icon;
 }
 
+
+
+.shop_all_button {
+
+    background-color: #64A3E0;
+    display: flex;
+    font-weight: bold;
+    color: #FFFFFF;
+    width: 180px;
+    align-self: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+
+}
+
+.shop_all_button > p{
+
+    padding-top: 2px;
+    font-size: var(--text-md);
+}
+
+.shop_all_button > img{
+    align-self: center;
+    height: 25px;
+}
 @media(max-width: 770px){
     .navcontent{
         justify-content: space-evenly;
@@ -593,6 +660,11 @@ footer > section {
         background: url(Images/homepage-image-small.svg) no-repeat center;
         background-size: cover;
         height: 430px;
+    }
+
+    .product_banner_container{
+
+        overflow: scroll;
     }
 
 }

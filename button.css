@@ -30,7 +30,7 @@ button {
 
     font-size: var(--text-sm);
     font-weight: 600;
-    padding: 12px 40px;
+    padding: 12px 20px 10px;
     background-color: #64A3E0;
 
 }
