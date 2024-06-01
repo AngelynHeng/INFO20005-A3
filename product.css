@@ -1,5 +1,4 @@
-.product_box{
-
+.product{
     display: grid;
     grid-template-rows: 382px 30px 30px 50px;
     grid-template-columns: 190px 40px;
@@ -9,39 +8,50 @@
         "card_code card_code"
         "add_to_cart_button heart_icon";
     text-align: left;
+    cursor: pointer;
 }
 
-.product_box > img:first-of-type{
-
+.product__image{
     width: 240px; 
     grid-area: picture;
 }
 
-.product_box > p:first-of-type{
-
+.product__title{
     grid-area: card_name;
 }
 
-.product_box >p:last-of-type{
+.product__code{
     grid-area: card_code;
+    font-size: var(--text-xs);
 }
 
-.product_box > button{
+.product > button{
     grid-area: add_to_cart_button;
+
+
 }
 
-.product_box > .icon{
+.heart__icon{
 
+    width: 28px;
     align-self: center;
     justify-self: right;
-
-}
-.product > img:last-of-type{
-    
     grid-area: heart_icon;
+
 }
 
-.xs_button {
+.nonclickable--product {
+
+    opacity: 0.5;
+}
+.nonclickable--product > button{
+
+    cursor:default;
+    background-color: grey;
+    
+}
+
+.xs_button{
     display: none;
 }
 
@@ -71,8 +81,9 @@
 
 section.product_description_box{
 
-    margin-bottom: 0;
     background-color: #F9EDDD;
+    margin-bottom: 0px;
+    padding-bottom: 50px;
     width: 100%;
     border-top-right-radius: 80px;
     border-top-left-radius: 80px;
@@ -97,34 +108,34 @@ section.product_description_box{
             gap: 30px;
         }
 
-    
+        .product_list_wrapper > .product{
+            grid-template-rows: 260px 20px 20px 30px;
+            grid-template-columns: 140px 20px;
+        }
+
+        .product__image{
+            width: 165px; 
+            justify-self: center;
+        }
+
+        .product__title{
+            font-size: var(--text-xxs);
+        }
+        
+        .product__code{
+            font-size: var(--text-xxxs);
+        }
+
+        .heart__icon{
+            width: 20px;
+            align-self: center;
+            justify-self: right;
+        }
         .product_list_wrapper > .product_box{
             grid-template-rows: 260px 20px 20px 30px;
             grid-template-columns: 140px 20px;
         }
-    
-        .product_box > p:first-of-type{
-            font-size: var(--text-xxs);
-        }
         
-    
-        .product_box > img:first-of-type{
-            width: 165px; 
-            justify-self: center;
-        }
-    
-        .product_box >p:last-of-type{
-            font-size: var(--text-xxxs);
-        }
-    
-        .product_box > .icon{
-    
-            width: 20px;
-            align-self: center;
-            justify-self: right;
-        
-        }
-    
         .smaller_button{
             display: none;
         }

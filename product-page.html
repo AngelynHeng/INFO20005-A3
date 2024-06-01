@@ -51,11 +51,11 @@
 
         <section class="navigation_icons">
 
-            <div class="product_list_header"> 
+            <div class="page_header"> 
 
                 <div class="icon_wrapper">
 
-                    <img src="Images/back-grey.svg" class="icon">
+                    <img src="Images/back-grey.svg" class="icon" id="back-icon" onclick="history.back()">
                     <img src="Images/sort-grey.svg" class="icon">
 
                 </div>
@@ -68,7 +68,7 @@
 
             <div class="product">
 
-                <img src="Images/Product-image/Image 2.png" class="product__image">
+                <img src="" class="product__display__image" id="product-page-image">
 
             </div>
 
@@ -158,10 +158,20 @@
             </div>
     
             <div class="product_banner_container"> 
+
+                <div class="product clickable--product">
+    
+                    <img class="product__image"src="Images/Product-image/201.png">
+                    <p class="product__title"> Digital Birthday Card </p>
+                    <p class="product__code"> No. 201</p>
+                    <button class="smaller_button" id="201"> Add to Cart </button>
+                    <img class="heart__icon"src="Images/Heart-red.svg" class="icon">
+    
+                </div>
     
                 <div class="product_box">
     
-                    <img src="Images/Product-image/Image 2.png">
+                    <img src="Images/Product-image/201.png">
                     <p> Digital Birthday Card </p>
                     <p class=text--xs> No. 201</p>
                     <button class="smaller_button"> Add to Cart </button>
@@ -171,7 +181,7 @@
     
                 <div class="product_box">
     
-                    <img src="Images/Product-image/Image 2.png">
+                    <img src="Images/Product-image/201.png">
                     <p> Digital Birthday Card </p>
                     <p class=text--xs> No. 201</p>
                     <button class="smaller_button"> Add to Cart </button>
@@ -181,7 +191,7 @@
     
                 <div class="product_box">
     
-                    <img src="Images/Product-image/Image 2.png">
+                    <img src="Images/Product-image/201.png">
                     <p> Digital Birthday Card </p>
                     <p class=text--xs> No. 201</p>
                     <button class="smaller_button"> Add to Cart </button>
@@ -191,7 +201,7 @@
     
                 <div class="product_box" id="201">
     
-                    <img src="Images/Product-image/Image 2.png">
+                    <img src="Images/Product-image/201.png">
                     <p> TEST !</p>
                     <p class=text--xs> No. 201</p>
                     <button onclick="getId(this)" class="smaller_button"> Add to Cart </button>
@@ -201,7 +211,7 @@
     
                   <div class="product_box">
     
-                    <img src="Images/Product-image/Image 2.png">
+                    <img src="Images/Product-image/201.png">
                     <p> Digital Birthday Card </p>
                     <p class=text--xs> No. 201</p>
                     <button class="smaller_button"> Add to Cart </button>
@@ -250,14 +260,19 @@
 
     </footer>
 
-<script>
+    <script src="product.js">     </script>
+    <script>
 
-    
-function getId(elem)
-{
-    console.log (elem.parentNode.id);
-}
-</script>
+        const image_201 = "Images/Product-image/201.png"
+
+        // let imgSrcDestringify = JSON.parse(localStorage.getItem('imgSrc'));
+        // console.log(imgSrcDestringify);
+
+        // var currentImgSource = imgSrcDestringify;
+
+        document.getElementById("product-page-image").src = image_201;
+        
+    </script>
 
 </body>
 </html>
