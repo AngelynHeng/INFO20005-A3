@@ -1,4 +1,6 @@
+
 /* Navigation Bar  */
+
 nav {
     top: 0;
     position: fixed;
@@ -20,11 +22,43 @@ nav {
 
 }
 
-.navigation{
+/*  Content in Navbar  */
+
+.menu{
+    padding-top: 3px;
+}
+
+.logo{
+    padding-top: 38px;
     display: flex;
-    height: 60px;
-    width: 160px;
-    justify-content: space-evenly;
+    width: 280px;
+    align-items: center;
+}
+
+.smalllogo{
+    display: none;
+    width: 38px;
+}
+
+
+.search{
+    display: flex;
+    height: 24px;
+    max-width: 30%;
+    padding: 5px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+.search-input{
+    font-size: 16px;
+    min-width: 69px;
+    color: #333333;
+    margin: 10px;
+    outline: none;
+    border: none;
+    background: transparent;
 }
 
 
@@ -44,7 +78,7 @@ nav {
 .footercontent{
 
     background-color: #F9EDDD;
-    padding: 40px;
+    padding: 40px 500px;
     margin: 0;
     gap: 12px;
     flex-direction: column;
@@ -65,7 +99,6 @@ nav {
 
 .footer_main_text > p{
 
-    font-size: var(--space-md);
     color: #DA9449
 }
 

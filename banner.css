@@ -1,0 +1,38 @@
+/* CSS for section Dividers */
+
+.banner{
+    
+    display:flex;
+    gap: 15px;
+    overflow:hidden;
+    margin: 0;
+    padding:0;
+    height:30px;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.banner__text {
+
+    font-weight: bolder;
+    padding-top: 4px;
+    font-size: larger;
+    text-transform:uppercase;
+
+}
+
+.banner--shop{
+    background-color:#F9EDDD;
+    color: #EDCCA5;
+}
+
+.banner--card{
+    background-color: #A0CCEF;
+    color:#64A3E0;
+}
+
+.banner--wemoments{
+
+    background-color: #F97D84 ;
+    color: #F33E45;
+}

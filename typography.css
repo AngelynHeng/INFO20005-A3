@@ -8,29 +8,22 @@
     --text-base-size: 2rem;
 
     /* type scale */
-    /* CHANGE!! */
+ 
+    /* TYPE SCALE FOR PRIMARY FONT (LEMON MILK) */
+    
     --text-scale-ratio: 1.2;
-    --text-xxs: calc(1rem / (var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio)));
-    --text-xs: calc(1.1rem / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+    --text-xxxs: calc(1rem / (var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio)));
+    --text-xxs: calc(1.1rem / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+    --text-xs: calc(1.2rem / var(--text-scale-ratio));
     --text-sm: calc(1.3rem / var(--text-scale-ratio));
-    --text-md: calc(1rem * var(--text-scale-ratio));
-    --text-lg: calc(1rem * var(--text-scale-ratio));
-    --text-xl: calc(1rem * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
-    --text-xxl: calc(1rem * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
-    --text-xxxl: calc(1.1rem * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-rg: calc(1rem * var(--text-scale-ratio));
+
+    /* TYPE SCALE FOR SECONDARY FONT (NARNIA) */
     
-    /* type scale for secondary font */
-    
-    /* XXL SIZE (HEADING) */
+    --text-xxxl: calc(4rem * var(--text-scale-ratio) * var(--text-scale-ratio)); 
+    --text-xxl: calc(3rem * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xl: calc(1.1rem * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));  
     --heading-size: calc(5.5rem * var(--text-scale-ratio) * var(--text-scale-ratio)); 
-
-    /* XL SIZE (Special) */
-    --special-size: calc(4rem * var(--text-scale-ratio) * var(--text-scale-ratio)); 
-    
-    /* Smaller Heading size (mobile resolution) */
-    /* L SIZE (subheading, etc) */
-    --subheading-size: calc(3rem * var(--text-scale-ratio) * var(--text-scale-ratio));
-
 
     /* spacing */
     --space-xxxs: 0.25em;
@@ -76,11 +69,12 @@
     font-weight: 700;
 }
 
+
+
 body{
     font-size: var(--text-base-size);
     font-family: var(--font-primary);
     line-height: var(--body-line-height);
-
 
 }
 
@@ -93,19 +87,19 @@ h1{
 
 h2{
     font-family: var(--font-secondary);
-    font-size: var(--special-size);
+    font-size: var(--text-xxxl);
     line-height: var(--heading-line-height);
     color: white;
 }
 
 h3, h4{
     font-family: var(--font-secondary);
-    font-size: var(--subheading-size);
+    font-size: var(--text-xxl);
     line-height: var(--heading-line-height);
     color: #E79E48;
 }
 
-p {
+p, span {
     font-family: var(--font-primary);
     font-size: var(--text-sm);
     
@@ -118,17 +112,16 @@ p {
 
 @media(max-width: 770px){
 
-    h1{
-
-        font-size: var(--subheading-size);
+    h1, h2, h3{
+        font-size: var(--text-xxl);
     }
 
-    h3, h4{
-        font-size: var(--text-xxxl);
+    h4{
+        font-size: var(--text-xl);
     }
 
-    p {
-        font-size: var(--space-xs);
+    p, span {
+        font-size: var(--text-xs);
     }
 
 

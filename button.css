@@ -7,14 +7,14 @@ button {
     cursor: pointer;
 
     border: none;
-    border-radius: 18px;
+    border-radius: 15px;
     padding: 18px 50px;
 
     font-family: 'Lemonmilk';
     text-align: center;
     background-color: black;
     color: white;
-    font-size: var(--text-md);
+    font-size: var(--text-sm);
     text-transform: uppercase;
     font-weight: bold;
 
@@ -40,7 +40,7 @@ button {
 .xs_button{
     
 
-    font-size: var(--text-xs);
+    font-size: var(--text-xxs);
     font-weight: 500;
     padding: 8px 15px;
     background-color: black;
@@ -55,7 +55,7 @@ button {
 }
 
 .content_container > .smaller_button {
-    font-size: var(--text-xs);
+    font-size: var(--text-xxs);
     display: block;
 }
 

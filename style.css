@@ -10,9 +10,9 @@
 
 @import url(header-and-footer.css);
 
-@import url(layout.css);
-
 @import url(product.css);
+
+@import url(banner.css);
 
 
 
@@ -22,7 +22,6 @@ html{
     overflow-y: scroll;
 
 }
-
 
 body{
 
@@ -41,89 +40,40 @@ body{
 
 }
 
-.icon{
+section{
 
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+
+.icon{
+    
     width: 28px;
 }
 
-.menu{
-    padding-top: 3px;
-}
-.logo{
-    padding-top: 38px;
-    display: flex;
-    width: 280px;
-    align-items: center;
-    justify-self: center;
-}
-
-.smalllogo{
-    display: none;
-    width: 38px;
-}
 
 
-.search{
-    display: flex;
-    height: 24px;
-    max-width: 30%;
-    padding: 5px;
-    align-items: center;
-    border-radius: 10px;
-    background-color: #FFFFFF;
-}
+@media(max-width: 770px){
 
-.search-input{
-    font-size: 16px;
-    min-width: 69px;
-    color: #333333;
-    margin: 10px;
-    outline: none;
-    border: none;
-    background: transparent;
-}
+    section{
 
-/* Back to top & Footer */
+        margin-top: 25px;
+        margin-bottom: 25px;
 
-/* Section divider */
+    }
 
-.banner{
-    display:flex;
-    gap: 15px;
-    overflow:hidden;
-    margin: 0;
-    padding:0;
-    height:30px;
-    justify-content:space-between;
-    align-items: center;
-    background-color:#F9EDDD;
+    
+
 }
 
 
-.banner > span {
-
-    font-weight: bolder;
-    padding-top: 4px;
-    font-size: larger;
-    text-transform:uppercase;
-    color: #EDCCA5;
-}
-
-.banner:nth-child(4){
-    background-color:#A0CCEF;
-}
-
-.banner:nth-child(4) > span{
-    color:#64A3E0;
-}
-
-.banner:nth-child(6){
-    background-color: #F97D84;
-}
-
-.banner:nth-child(6) > span{
-    color: #F33E45;
-}
 
 .order_summary_wrapper{
     display: flex;
@@ -133,13 +83,12 @@ body{
 .order_summary{
 
     border:2px solid #EBEBEB;
-    border-radius: 15px;
+    border-radius: 10px;
     margin-inline: 1.5rem;;
     padding: 32px 20px 20px 20px;
     width: 400px;
     height: 480px;
     justify-self: center;
-    font-size: large;
     text-transform: uppercase;
 
 }
@@ -153,7 +102,7 @@ body{
 
 .order_summary_content:first-of-type{
     margin-top: 0px;
-    font-size: larger;
+    font-size: var(--text-lg);
     font-weight: bolder;
 }
 
@@ -226,19 +175,9 @@ body{
 
 .confirmation_content{
 
-    padding-top: 100px;
     justify-content: center;
     align-items: center;
     
-}
-
-.confirmation_content > h1{
-    font-size: 2.5em;
-    margin: 0;
-}
-
-.confirmation_content > p{
-    font-size: 1.2em;
 }
 
 
@@ -255,13 +194,13 @@ body{
 
 }
 
-/* Grid for header */
 
+/* Homepage content */
 
 .content_container{
     display: grid;
     justify-content: center;
-    grid-template-columns: 340px 230px 210px;
+    grid-template-columns: 340px 230px 180px;
     grid-template-rows: 50px 120px 90px 250px;
     grid-template-areas: 
         "subtext subtext subtext"
@@ -272,7 +211,6 @@ body{
 
 .content_container > .subtext{
     grid-area: subtext;
-    font-size: var(--text-md);
     color: #6C9CCD;
     align-self:self-end;
 }
@@ -293,10 +231,7 @@ body{
 }
 
 .content_container > .text{
-
-    font-size: var(--text-md);
     text-align: left;
-    line-height: var(--body-line-height);
 }
 
 .content_container > #description_text{
@@ -332,7 +267,7 @@ body{
 
 .homepage_button > div{
 
-    border-radius: 15px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
 
@@ -453,9 +388,7 @@ body{
     grid-template-rows: 65px 20px;
 }
 
-/* individual product listing */
-
-
+/* Shop all "button" */
 
 .shop_all_button {
 
@@ -472,9 +405,7 @@ body{
 }
 
 .shop_all_button > p{
-
     padding-top: 2px;
-    font-size: var(--text-md);
 }
 
 .shop_all_button > img{
@@ -525,17 +456,16 @@ body{
         width: 100px;
     }
 
+    .footercontent{
+
+        padding: 30px 24px;
+
+    }
 
 }
 
 
 @media(max-width: 770px){
-
-    .content_container > #small_logo {
-        grid-area: logo;
-        justify-self: center;
-        display: block;
-    }
 
     .product_banner_container{
 
@@ -556,7 +486,7 @@ body{
 
     .content_container{
         grid-template-columns: 160px 110px 110px;
-        grid-template-rows: 20px 135px 70px 45px 170px;
+        grid-template-rows: 20px 135px 70px 40px 170px;
         grid-template-areas: 
             "logo logo logo"
             "subtext subtext subtext"
@@ -565,8 +495,16 @@ body{
             "desc desc desc";
     }
 
+    
+    .content_container > #small_logo {
+        grid-area: logo;
+        justify-self: center;
+        display: block;
+    }
+
+
     .content_container > .text{
-        font-size: var(--text-xs);
+        font-size: var(--text-xxs);
         line-height: 1.5;
         padding-top: 10px;
         padding-left: 8px;
@@ -575,7 +513,7 @@ body{
 
     .content_container > .subtext{
 
-        font-size: var(--text-xs);
+        font-size: var(--text-xxs);
 
     }
   
