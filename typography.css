@@ -17,12 +17,13 @@
     --text-xs: calc(1.2rem / var(--text-scale-ratio));
     --text-sm: calc(1.3rem / var(--text-scale-ratio));
     --text-rg: calc(1rem * var(--text-scale-ratio));
+    --text-lg: calc(1.3rem * var(--text-scale-ratio));
 
     /* TYPE SCALE FOR SECONDARY FONT (NARNIA) */
     
-    --text-xxxl: calc(4rem * var(--text-scale-ratio) * var(--text-scale-ratio)); 
-    --text-xxl: calc(3rem * var(--text-scale-ratio) * var(--text-scale-ratio));
     --text-xl: calc(1.1rem * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));  
+    --text-xxl: calc(3rem * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xxxl: calc(4rem * var(--text-scale-ratio) * var(--text-scale-ratio)); 
     --heading-size: calc(5.5rem * var(--text-scale-ratio) * var(--text-scale-ratio)); 
 
     /* spacing */

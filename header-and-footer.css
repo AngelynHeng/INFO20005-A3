@@ -28,7 +28,8 @@ nav {
     padding-top: 3px;
 }
 
-.logo{
+.logo > a > img{
+
     padding-top: 38px;
     display: flex;
     width: 280px;

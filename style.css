@@ -58,6 +58,10 @@ section{
     width: 28px;
 }
 
+a{
+
+    text-decoration: none;
+}
 
 
 @media(max-width: 770px){
@@ -407,7 +411,6 @@ section{
 .shop_all_button > p{
     padding-top: 2px;
 }
-
 .shop_all_button > img{
     align-self: center;
     height: 25px;
@@ -434,6 +437,15 @@ section{
 
     width: 800px;
 }
+
+.shop_all{
+
+    display: flex;
+    align-self: center;
+
+}
+
+
 
 
 @media(max-width: 770px){

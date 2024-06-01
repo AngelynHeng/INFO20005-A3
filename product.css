@@ -58,6 +58,36 @@
 
 }
 
+/* Product details page  */
+
+
+.product__image{
+
+    display: flex;
+    width: 100%;
+
+
+}
+
+section.product_description_box{
+
+    margin-bottom: 0;
+    background-color: #F9EDDD;
+    width: 100%;
+    border-top-right-radius: 80px;
+    border-top-left-radius: 80px;
+
+}
+
+.product__description{
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+
+}
+
+
 
 @media(max-width: 800px){
 

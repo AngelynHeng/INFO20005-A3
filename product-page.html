@@ -17,12 +17,17 @@
                  </div>
 
                 <div class="logo">
+                    <a href="index.html">
                     <img src="Images/Large Logo.svg">
+                    </a>
                 </div>
-                <div class="smalllogo">
-                    <img src="Images/small Logo.svg" class="smalllogo">
 
+                <div class="smalllogo">
+                    <a href="index.html">
+                    <img src="Images/small Logo.svg" class="smalllogo">
+                    </a>
                 </div>
+
                 <div class="search"> 
                     <img src="Images/Search.svg" class="icon">
                     <input class="search-input" type="search" placeholder=Search>
@@ -30,7 +35,9 @@
                 </div>
     
                 <div class="icon_wrapper">
-                    <img src="Images/Cart.svg" class="icon">
+                    <a href="shopping-cart.html">
+                        <img src="Images/Cart.svg" class="icon">
+                    </a>
                     <img src="Images/Heart.svg" class="icon">
                     <img src="Images/profile.svg" class="icon">
                 </div>      
@@ -41,6 +48,79 @@
     </header>
 
     <main>
+
+        <section class="navigation_icons">
+
+            <div class="product_list_header"> 
+
+                <div class="icon_wrapper">
+
+                    <img src="Images/back-grey.svg" class="icon">
+                    <img src="Images/sort-grey.svg" class="icon">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <div class="product">
+
+                <img src="Images/Product-image/Image 2.png" class="product__image">
+
+            </div>
+
+        </section>
+
+        <section class="product_description_box"> 
+
+            <div class="product__description"> 
+
+                <div class="row__one">
+
+                    <p> Digital birthday card </p>
+                    <img src="Images/Heart-red.svg" class="icon">
+
+                </div>
+
+                <p class="row__two" id="product-id"> No.201 </p>
+
+                <div class="row__three"> 
+
+                    <p> $10.00 </p>
+                    <button> add to cart </button>
+
+                </div>
+
+                <div class="row__four">
+                    <p> Description </p>
+                    <hr>
+                </div>
+
+                <p class="row__five"> 
+                    
+                    send BIRTHDAY CARDS TO YOUR LOVE ONES ALL 
+                    AROUND THE WORLD AND MAKE THEIR SPECIAL DAY 
+                    EVEN MORE MEMORABLE WITH OUR DIGITAL CARD.
+                </p>
+
+                <div class="row__six">
+                    <p> Detail </p>
+                    <hr>
+                </div>
+
+                <p class="row__seven"> 
+
+                    EVERY DIGITAL CARD PURCHASED FROM US WILL BE
+                    EMAILED TO YOU SO YOU CAN SHARE YOUR CARD 
+                    THROUGH MESSENGER, INSTAGRAM, EMAIL AND MORE!
+                </p>
+
+
+            </div>
+        </section>
 
         <div class="banner banner--card">  <!-- "card" section divider -->
 
@@ -109,12 +189,12 @@
     
                 </div>
     
-                <div class="product_box">
+                <div class="product_box" id="201">
     
                     <img src="Images/Product-image/Image 2.png">
-                    <p> Digital Birthday Card </p>
+                    <p> TEST !</p>
                     <p class=text--xs> No. 201</p>
-                    <button class="smaller_button"> Add to Cart </button>
+                    <button onclick="getId(this)" class="smaller_button"> Add to Cart </button>
                     <img src="Images/Heart-red.svg" class="icon">
     
                 </div>
@@ -170,6 +250,14 @@
 
     </footer>
 
+<script>
+
+    
+function getId(elem)
+{
+    console.log (elem.parentNode.id);
+}
+</script>
 
 </body>
 </html>
