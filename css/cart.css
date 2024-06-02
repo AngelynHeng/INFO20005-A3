@@ -106,3 +106,58 @@
     font-size: var(--text-lg);
 
 }
+
+.paypal > img {
+
+    height: 38px;
+
+}
+
+.checkout-section{
+
+    display: flex;
+    gap: 40px;
+
+}
+
+/* Media query for cart with item */
+
+@media (max-width: 700px){
+
+    .item__box{
+
+       width: 300px;
+       height: 150px;
+    }
+
+    .item__grid{
+
+        grid-template-columns: 100px 200px;
+        grid-template-rows: 20px 20px 60px 60px;
+
+    }
+
+    .cart__item__image{
+
+        width: 100px;
+    }
+
+    .cart__item__name, .cart__item__price{
+
+        font-size: var(--text-xxs);
+    }
+
+    .cart__item__code{
+
+        font-size: var(--text-xxxs);
+    }
+
+    .item__grid > button {
+
+        font-size: var(--text-xxs);
+        font-weight: 500;
+        padding: 8px 15px;
+        background-color: var(--black);
+
+    }
+}

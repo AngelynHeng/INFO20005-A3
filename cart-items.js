@@ -68,6 +68,7 @@ if (display201 == "yes"){
         if (document.getElementById("cart-contents").childElementCount == 1){
             console.log("there is 2 items")
             document.getElementById("price").innerHTML = "$10.00"
+            document.getElementById("total-price").innerHTML = "$10.00"
             document.getElementById("current-cart").innerHTML = "[1]"
         }        
         
@@ -118,6 +119,7 @@ if (display202 == "yes"){
         if (document.getElementById("cart-contents").childElementCount == 1){
             console.log("there is 2 items")
             document.getElementById("price").innerHTML = "$10.00"
+            document.getElementById("total-price").innerHTML = "$10.00"
             document.getElementById("current-cart").innerHTML = "[1]"
         }        
         
@@ -137,24 +139,27 @@ if (display202 == "yes"){
 
 }
 
+// Updates total price 
+
 if (document.getElementById("cart-contents").childElementCount == 2){
     console.log("there is 2 items")
     document.getElementById("price").innerHTML = "$20.00"
+    document.getElementById("total-price").innerHTML = "$20.00"
     document.getElementById("current-cart").innerHTML = "[2]"
 }
 
-
-
+// Redirect user to empty shopping cart page whenever cart page is empty 
 
 document.getElementById("clear-cart").addEventListener("click", function(){
 
     document.getElementById("cart-contents").innerHTML = "";
     if (document.getElementById("cart-contents").childElementCount == 0){
 
-        console.log("cart is empty")
         window.location.href= "empty-shopping-cart.html"
     
     }
     localStorage.clear();
 
 })
+
+// Redirect users to checkout page

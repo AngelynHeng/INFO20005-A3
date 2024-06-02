@@ -54,6 +54,29 @@ button:hover{
 
 }
 
+.checkout {
+
+    font-size: var(--text-lg);
+    font-weight: 600;
+    padding: 17px 60px;
+
+}
+
+.paypal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    height: 58px;
+    padding: 17px 60px;
+    background-color: #FFC439;
+}
+
+.paypal:hover{
+    
+    background-color: #FFC439;
+}
+
 @media(max-width: 770px){
 
 .content-container > .big-button {

@@ -38,11 +38,13 @@
 }
 
 .content-container > #about_us{
+    cursor: default;
     grid-area: button;
     grid-column-start: 2;
 }
 
 .content-container > #blog{
+    cursor: default;
     grid-area: button;
     grid-column-start: 3;
 }
@@ -178,6 +180,13 @@
     width: 86px;
     align-self: center;
 }
+
+#blog, #about_us, #wedding, #all:hover{
+
+    background-color: var(--black);
+
+}
+
 
 
 @media(max-width: 770px){
