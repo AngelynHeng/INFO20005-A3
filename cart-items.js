@@ -1,4 +1,11 @@
 
+history.scrollRestoration = "manual";
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
+
 var display201 = "no"
 var display202 = "no"
 
