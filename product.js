@@ -1,12 +1,11 @@
 // reset scroll position between pages when users navigate back and forth
-
 if (history.scrollRestoration) {
     console.log("history scroll")
     history.scrollRestoration = "manual";
 
   }
 
-  window.onbeforeunload = function () {
+window.onbeforeunload = function () {
     console.log("window onbeforeload")
     window.location.reload();
     window.scrollTo(0, 0);

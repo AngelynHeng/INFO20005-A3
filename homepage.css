@@ -1,0 +1,274 @@
+/* Header main image */
+
+.main-image{
+    position: relative;
+    background: url(Images/homepage-image-large.svg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    max-width: 1400px;
+    overflow: hidden;
+    align-content: center;
+
+}
+
+
+/* Homepage content */
+
+.content-container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 340px 230px 180px;
+    grid-template-rows: 50px 120px 90px 250px;
+    grid-template-areas: 
+        "subtext subtext subtext"
+        "heading heading heading"
+        "button button button"
+        "desc desc desc";
+}
+
+.content-container > .subtext{
+    grid-area: subtext;
+    color: var(--darker-blue);
+    align-self:self-end;
+}
+
+.content-container > h1{
+    grid-area: heading;
+
+}
+
+.content-container > #about_us{
+    grid-area: button;
+    grid-column-start: 2;
+}
+
+.content-container > #blog{
+    grid-area: button;
+    grid-column-start: 3;
+}
+
+.content-container > .text{
+    text-align: left;
+}
+
+.content-container > #description-text{
+
+    grid-area: desc;
+    grid-column-start: 2;
+
+}
+
+.content-container > #small-logo {
+    display: none;
+}
+
+/* Section 2 Homepage */
+
+.homepage-button-container{
+
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.homepage_button{
+    
+    display: grid;
+    grid-template-rows: 160px 160px;
+    grid-template-columns: 445px 150px 225px 225px;
+    grid-template-areas: 
+        "ecard ecard ecard envelope"
+        "cake cake_image other other";
+    justify-content: center;
+
+}
+
+.homepage_button > div{
+
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.e-cards{
+
+    grid-area: ecard;
+    width: 550px;
+    background-color: var(--blue);
+    align-items: center;
+    margin-right: 30px;
+    justify-self: end;
+}
+
+
+.e-cards-grid{
+
+    display: grid;
+    grid-template-columns: 440px;
+    grid-template-rows: 80px 50px;
+    justify-content: center;
+}
+
+.e-cards-grid > h2{
+
+    grid-area: ecard_title;
+    grid-column-start: 1;
+    grid-row-end: 1;
+}
+
+.homepage_button > img{
+    height: 160px;
+}
+
+.envelope{
+    grid-area: envelope;
+}
+
+.cake_image{
+    grid-area: cake_image;
+
+
+}
+
+.e-cards-button {
+
+    display: flex;
+    justify-content: center;
+    grid-area: button;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    align-self: center;
+    gap: 7px;
+
+
+}
+
+.e-cards-button > button{
+
+    padding: 12px 30px 10px;
+}
+
+.cake , .other{
+
+    align-self: center;
+    width: 400px;
+    height: 120px;
+    align-items: self-end;
+}
+
+.cake{
+
+    grid-area: cake;
+    background-color:var(--red);
+    gap: 30px;
+    justify-self: right;
+
+}
+
+.other{
+
+    grid-area: other;
+    background-color:var(--beige);
+    justify-self: left;
+
+}
+
+.cake > img{
+    width: 86px;
+    align-self: center;
+}
+
+
+@media(max-width: 770px){
+
+    .homepage_button{
+
+        grid-template-rows: 135px 105px 90px;
+        grid-template-columns: 90px 170px 90px;
+        grid-template-areas: 
+            " ecard ecard ecard "
+            " cake cake cake_image"
+            "envelope other other";
+
+    }
+    .e-cards {
+
+        width: 330px;
+        height: 130px;
+        margin-right: 0px;
+        justify-self: center;
+    }
+
+    .e-cards-grid{
+
+        display: grid;
+        grid-template-columns: 320px;
+        grid-template-rows: 80px 50px;
+        justify-items: center;
+        align-self: center;
+    }
+
+    .e-cards-button {
+
+        width: 330px;
+        display: flex;
+        justify-content: center;
+        grid-area: button;
+        grid-column-start: 1;
+        grid-row-start: 2;
+        align-self: center;
+        gap: 7px;
+    
+    
+    }
+
+    .e-cards-grid > h2{
+        height: max-content;
+        padding-top:10px;
+    }
+
+    .e-cards-button > .smaller-button{
+        font-size: var(--text-xxs);
+        padding: 10px 22px 10px;
+    }
+
+    .e-cards-button > a > .smaller-button {
+
+        font-size: var(--text-xxs);
+        padding: 10px 22px 10px;
+    
+    }
+
+    .cake, .other{
+
+        width: 250px;
+        height: 80px;
+        padding-top: 8px;
+    }
+
+    .cake > h2 {
+
+        height: 80px;
+    }
+
+    .cake > img{
+        width: 60px;
+        align-self: center;
+    }
+    
+    .cake_image{
+
+        align-self: flex-end;
+    }
+
+   .homepage_button > img{
+
+        height: 90px;
+   }
+    
+
+
+
+
+}
