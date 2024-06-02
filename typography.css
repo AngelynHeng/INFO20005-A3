@@ -1,8 +1,8 @@
 :root{
 
     /* Declaring variables for two main fonts */
-    --font-primary: 'Lemonmilk';
-    --font-secondary: 'Narnia';
+    --font-primary:'Lemonmilk';
+    --font-secondary:'Narnia';
 
     /* setting base values */
     --text-base-size: 2rem;
@@ -75,7 +75,7 @@
 }
 
 @font-face {
-    font-family: 'Lemonmilk';
+    font-family:'Lemonmilk';
     src: url(Fonts/lemonmilk-bold.woff) format('woff'),
     url(Fonts/lemonmilk-bold.woff2) format('woff2');
     font-style: normal;

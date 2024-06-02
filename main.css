@@ -1,18 +1,22 @@
 /* importing css files */
-
-@import url(reset.css);  /* Reseting css style */
+@import url(css/reset.css);  /* Reseting css style */
 
 @import url(typography.css); /* Fonts style, colors, spacing, line height  */
 
-@import url(button.css);  /* Style for buttons used  */
-
-@import url(header-and-footer.css); /* Style for  different Header and footers used */
-
-@import url(product.css); /* Style used for product-related elemets & page */
-
-@import url(banner.css); /* css style for section divider / banners used  */
-
 @import url(homepage.css);
+
+@import url(css/button.css);  /* Style for buttons used  */
+
+@import url(css/header-and-footer.css); /* Style for  different Header and footers used */
+
+@import url(css/product.css); /* Style used for product-related elemets & page */
+
+@import url(css/banner.css); /* css style for section divider / banners used  */
+
+@import url(css/cart.css);
+
+@import url(css/order.css);
+
 
 
 html{
@@ -150,9 +154,33 @@ a{
     justify-content: right;
 }
 
+.empty--cart{
+    display: flex;
+}
+
+.empty--cart > h4{
+    width: max-content;
+}
+
+.empty--cart > p{
+    font-size: var(--text-xl);
+    height: max-content;
+    align-self: flex-end;
+
+}
+
+.empty-cart > div {
+
+    margin: 200px 0px;
+}
+
+
+
+/* empty card section */
+
 .shop-all{
     display: flex;
-    align-self: center;
+    justify-content: space-evenly;
 }
 
 
@@ -172,6 +200,13 @@ hr {
     section{
         margin-top: 25px;
         margin-bottom: 25px;
+    }
+
+    .empty--cart > p{
+        font-size: var(--text-lg);
+        height: max-content;
+        align-self: flex-end;
+    
     }
 }
 
