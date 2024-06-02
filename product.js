@@ -1,12 +1,10 @@
 // reset scroll position between pages when users navigate back and forth
 
-if (history.scrollRestoration) {
-    history.scrollRestoration = 'manual';
-} else {
-    window.onbeforeunload = function () {
-        window.scrollTo(0, 0);
-    }
-}
+  history.scrollRestoration = "manual";
+
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
 
 
 // Code to direct users to empty or shopping cart page w content depending on local storage length
