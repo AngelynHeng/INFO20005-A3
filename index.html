@@ -9,6 +9,7 @@
 </head>
 <body>
 
+
     <header>
         <nav>        
            <div class="navcontent">
@@ -193,13 +194,35 @@
                 <img class="product__image"src="Images/Product-image/201.png">
                 <p class="product__title"> Digital Birthday Card </p>
                 <p class="product__code"> No. 201</p>
+                <button class="smaller_button" id="201" onclick="getId(this)"> Add to Cart </button>
+                <button class="xs_button" id="201"  onclick="getId(this)"> Add to Cart </button>
+                <img class="heart__icon"src="Images/Heart-red.svg" class="icon">
+
+            </div>
+
+            <div class="product clickable--product">
+    
+                <img class="product__image"src="Images/Product-image/202.png">
+                <p class="product__title"> Digital Birthday Card </p>
+                <p class="product__code"> No. 202</p>
+                <button class="smaller_button" id="202" onclick="getId(this)"> Add to Cart </button>
+                <button class="xs_button" id="202" onclick="getId(this)"> Add to Cart </button>
+                <img class="heart__icon"src="Images/Heart-red.svg" class="icon">
+
+            </div>
+
+            <div class="product nonclickable--product">
+    
+                <img class="product__image"src="Images/Product-image/201.png">
+                <p class="product__title"> Digital Birthday Card </p>
+                <p class="product__code"> No. 201</p>
                 <button class="smaller_button" id="201"> Add to Cart </button>
                 <button class="xs_button" id="201"> Add to Cart </button>
                 <img class="heart__icon"src="Images/Heart-red.svg" class="icon">
 
             </div>
 
-            <div class="product clickable--product">
+            <div class="product nonclickable--product">
 
                 <img class="product__image"src="Images/Product-image/201.png">
                 <p class="product__title"> Digital Birthday Card </p>
@@ -211,37 +234,15 @@
             </div>
 
             <div class="product nonclickable--product">
-    
-                    <img class="product__image"src="Images/Product-image/201.png">
-                    <p class="product__title"> Digital Birthday Card </p>
-                    <p class="product__code"> No. 201</p>
-                    <button class="smaller_button" id="201"> Add to Cart </button>
-                    <button class="xs_button" id="201"> Add to Cart </button>
-                    <img class="heart__icon"src="Images/Heart-red.svg" class="icon">
-    
-                </div>
 
-                <div class="product nonclickable--product">
-    
-                    <img class="product__image"src="Images/Product-image/201.png">
-                    <p class="product__title"> Digital Birthday Card </p>
-                    <p class="product__code"> No. 201</p>
-                    <button class="smaller_button" id="201"> Add to Cart </button>
-                    <button class="xs_button" id="201"> Add to Cart </button>
-                    <img class="heart__icon"src="Images/Heart-red.svg" class="icon">
-    
-                </div>
+                <img class="product__image"src="Images/Product-image/201.png">
+                <p class="product__title"> Digital Birthday Card </p>
+                <p class="product__code"> No. 201</p>
+                <button class="smaller_button" id="201"> Add to Cart </button>
+                <button class="xs_button" id="201"> Add to Cart </button>
+                <img class="heart__icon"src="Images/Heart-red.svg" class="icon">
 
-                <div class="product nonclickable--product">
-    
-                    <img class="product__image"src="Images/Product-image/201.png">
-                    <p class="product__title"> Digital Birthday Card </p>
-                    <p class="product__code"> No. 201</p>
-                    <button class="smaller_button" id="201"> Add to Cart </button>
-                    <button class="xs_button" id="201"> Add to Cart </button>
-                    <img class="heart__icon"src="Images/Heart-red.svg" class="icon">
-    
-                </div>
+            </div>
 
 
         </div>
@@ -331,6 +332,7 @@
         </div>
 
     </footer>
-<script src="product.js"> </script>
+    <script src="product.js"> </script>
+    <script src="cart.js"> </script>
 </body>
 </html>

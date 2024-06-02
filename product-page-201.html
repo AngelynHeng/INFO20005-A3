@@ -66,9 +66,9 @@
 
         <section>
 
-            <div class="product">
+            <div class="product-page">
 
-                <img src="" class="product__display__image" id="product-page-image">
+                <img src="Images/Product-image/201.png" class="product__display__image" id="product-page-image">
 
             </div>
 
@@ -161,64 +161,58 @@
 
                 <div class="product clickable--product">
     
-                    <img class="product__image"src="Images/Product-image/201.png">
+                    <img class="product__image"src="Images/Product-image/202.png">
                     <p class="product__title"> Digital Birthday Card </p>
-                    <p class="product__code"> No. 201</p>
-                    <button class="smaller_button" id="201"> Add to Cart </button>
+                    <p class="product__code"> No. 202</p>
+                    <button class="smaller_button" id="202" onclick="getId(this)"> Add to Cart </button>
+                    <button class="xs_button" id="202" onclick="getId(this)"> Add to Cart </button>
                     <img class="heart__icon"src="Images/Heart-red.svg" class="icon">
     
                 </div>
     
-                <div class="product_box">
+                <div class="product nonclickable--product">
     
-                    <img src="Images/Product-image/201.png">
-                    <p> Digital Birthday Card </p>
-                    <p class=text--xs> No. 201</p>
-                    <button class="smaller_button"> Add to Cart </button>
-                    <img src="Images/Heart-red.svg" class="icon">
-    
-                </div>
-    
-                <div class="product_box">
-    
-                    <img src="Images/Product-image/201.png">
-                    <p> Digital Birthday Card </p>
-                    <p class=text--xs> No. 201</p>
-                    <button class="smaller_button"> Add to Cart </button>
-                    <img src="Images/Heart-red.svg" class="icon">
+                    <img class="product__image"src="Images/Product-image/201.png">
+                    <p class="product__title"> Digital Birthday Card </p>
+                    <p class="product__code"> No. 201</p>
+                    <button class="smaller_button" id="201"> Add to Cart </button>
+                    <button class="xs_button" id="201"> Add to Cart </button>
+                    <img class="heart__icon"src="Images/Heart-red.svg" class="icon">
     
                 </div>
     
-                <div class="product_box">
+                <div class="product nonclickable--product">
     
-                    <img src="Images/Product-image/201.png">
-                    <p> Digital Birthday Card </p>
-                    <p class=text--xs> No. 201</p>
-                    <button class="smaller_button"> Add to Cart </button>
-                    <img src="Images/Heart-red.svg" class="icon">
-    
-                </div>
-    
-                <div class="product_box" id="201">
-    
-                    <img src="Images/Product-image/201.png">
-                    <p> TEST !</p>
-                    <p class=text--xs> No. 201</p>
-                    <button onclick="getId(this)" class="smaller_button"> Add to Cart </button>
-                    <img src="Images/Heart-red.svg" class="icon">
+                    <img class="product__image"src="Images/Product-image/201.png">
+                    <p class="product__title"> Digital Birthday Card </p>
+                    <p class="product__code"> No. 201</p>
+                    <button class="smaller_button" id="201"> Add to Cart </button>
+                    <button class="xs_button" id="201"> Add to Cart </button>
+                    <img class="heart__icon"src="Images/Heart-red.svg" class="icon">
     
                 </div>
     
-                  <div class="product_box">
+                <div class="product nonclickable--product">
     
-                    <img src="Images/Product-image/201.png">
-                    <p> Digital Birthday Card </p>
-                    <p class=text--xs> No. 201</p>
-                    <button class="smaller_button"> Add to Cart </button>
-                    <img src="Images/Heart-red.svg" class="icon">
+                    <img class="product__image"src="Images/Product-image/201.png">
+                    <p class="product__title"> Digital Birthday Card </p>
+                    <p class="product__code"> No. 201</p>
+                    <button class="smaller_button" id="201"> Add to Cart </button>
+                    <button class="xs_button" id="201"> Add to Cart </button>
+                    <img class="heart__icon"src="Images/Heart-red.svg" class="icon">
     
                 </div>
     
+                <div class="product nonclickable--product">
+    
+                    <img class="product__image"src="Images/Product-image/201.png">
+                    <p class="product__title"> Digital Birthday Card </p>
+                    <p class="product__code"> No. 201</p>
+                    <button class="smaller_button" id="201"> Add to Cart </button>
+                    <button class="xs_button" id="201"> Add to Cart </button>
+                    <img class="heart__icon"src="Images/Heart-red.svg" class="icon">
+    
+                </div>    
     
             </div>
      
@@ -259,20 +253,7 @@
 
 
     </footer>
-
-    <script src="product.js">     </script>
-    <script>
-
-        const image_201 = "Images/Product-image/201.png"
-
-        // let imgSrcDestringify = JSON.parse(localStorage.getItem('imgSrc'));
-        // console.log(imgSrcDestringify);
-
-        // var currentImgSource = imgSrcDestringify;
-
-        document.getElementById("product-page-image").src = image_201;
-        
-    </script>
-
+    <script src="product.js"> </script>
+    <script src="cart.js"> </script>
 </body>
 </html>
