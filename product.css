@@ -1,3 +1,6 @@
+
+/*  Product banner , Product page and product list  */
+
 .product{
     display: grid;
     grid-template-rows: 382px 30px 30px 50px;
@@ -27,8 +30,6 @@
 
 .product > button{
     grid-area: add_to_cart_button;
-
-
 }
 
 .heart__icon{
@@ -37,7 +38,6 @@
     align-self: center;
     justify-self: right;
     grid-area: heart_icon;
-
 }
 
 .nonclickable--product {
@@ -45,10 +45,8 @@
     opacity: 0.5;
 }
 .nonclickable--product > button{
-
     cursor:default;
-    background-color: grey;
-    
+    background-color: grey; 
 }
 
 .xs_button{
@@ -59,45 +57,119 @@
 /* Product List Page */
 
 .product_list_wrapper{
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap:50px;
     width: 800px;
-
 }
 
 /* Product details page  */
 
 
 .product__image{
-
     display: flex;
     width: 100%;
-
-
 }
 
 section.product_description_box{
-
     background-color: #F9EDDD;
     margin-bottom: 0px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     width: 100%;
     border-top-right-radius: 80px;
     border-top-left-radius: 80px;
-
 }
 
 .product__description{
-
     display: flex;
     flex-direction: column;
     padding-top: 80px;
-
+    width:600px;
+    text-align: left;
 }
 
+.row__one, .row__three, .row__four, .row__six{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row__one > p {
+    font-size: var(--text-lg);
+}
+
+.row__two {
+    height: 100px;
+}
+
+.row__three{
+    height: 100px;
+}
+
+.row__three > button{
+    align-self: flex-start;
+}
+
+.row__three > p {
+    font-size: var(--text-lg);
+}
+
+.row__four > p{
+    font-size: var(--text-rg);
+}
+
+.row__six > p {
+    font-size: var(--text-rg);
+}
+
+.recommended-subheading{   
+    font-size: var(--text-lg);
+    text-align: left;
+    padding-left: 240px;
+    align-self: self-end;
+}
+
+
+/* Media Query for Product Page */
+
+@media(max-width: 800px){
+
+    .recommended-subheading{
+        font-size: var(--text-rg);
+        padding-left: 40px;
+    }
+
+    .product__display__image{
+        width: 300px;
+    }
+
+    .product__description{
+        width: 320px;
+    }
+
+    .row__one > p {
+        font-size: var(--text-rg);
+    }
+
+    
+    .row__three > p {
+        font-size: var(--text-rg);
+    
+    }
+    
+    .row__four > p{
+        font-size: var(--text-s);
+    }
+    
+    .row__six > p {
+        font-size: var(--text-s);
+    }
+    
+}
+
+
+
+/*  Media query for product list, grid change from showing 3 items per row to 2 when screen width < 800 */
 
 
 @media(max-width: 800px){

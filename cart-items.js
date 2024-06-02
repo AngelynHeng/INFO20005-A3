@@ -69,6 +69,7 @@ if (display201 == "yes"){
         if (document.getElementById("cart-contents").childElementCount == 0){
 
             console.log("cart is empty")
+            localStorage.clear()
             window.location.href= "empty-shopping-cart.html"
         
         }
@@ -109,6 +110,7 @@ if (display202 == "yes"){
         if (document.getElementById("cart-contents").childElementCount == 0){
 
             console.log("cart is empty")
+            localStorage.clear()
             window.location.href= "empty-shopping-cart.html"
         
         }

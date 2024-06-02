@@ -20,8 +20,8 @@ document.getElementById("shopping-cart-icon").addEventListener("click", function
         console.log(localStorage.length);
 
         if (localStorage.length == 0){
-
-        window.location.href = "empty-shopping-cart.html" ;
+        
+            window.location.href = "empty-shopping-cart.html" ;
 
         } else if (localStorage.length !== 0){
 
