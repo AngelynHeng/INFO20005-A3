@@ -64,7 +64,7 @@ document.getElementById("201-add-small").addEventListener("click", function(){
 
     document.getElementById("201-add-small").innerHTML= "Added to Cart";
     document.getElementById("201-add-small").style.backgroundColor = "var(--darker-red)";
-    console.log("hello small");
+    addToCart('201');
 
 })
 
@@ -87,7 +87,7 @@ document.getElementById("202-add-small").addEventListener("click", function(){
 
     document.getElementById("202-add-small").innerHTML= "Added to Cart";
     document.getElementById("202-add-small").style.backgroundColor = "var(--darker-red)";
-    console.log("hello small");
+    addToCart('202');
 
 })
 
