@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Product Page</title>
 </head>
-<body>
+<body onLoad=" LoadOnce()">
     
     <header>
         <nav>        
@@ -269,6 +269,10 @@
 
     <script>
 
+    function LoadOnce() 
+        { 
+        window.location.reload(); 
+        }
 
 
     if (localStorage.getItem("cartStatus" + "201") == "1")  {
