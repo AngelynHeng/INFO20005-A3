@@ -132,7 +132,7 @@
 
     .item__grid{
 
-        grid-template-columns: 100px 200px;
+        grid-template-columns: 110px 200px;
         grid-template-rows: 20px 20px 60px 60px;
 
     }
@@ -161,11 +161,27 @@
 
     }
 
-    /* Media Query for cart total */
-    .cart-total{
+    /* Cart total */
 
+    .cart-total {
         width: 300px;
-
     }
+
+    .cart-total > p:first-of-type{
+        font-size: var(--text-lg);
+    }
+
+    .cart-total > div > p {
+        font-size: var(--text-sm);
+    }
+
+    /* checkout section */
+
+    .paypal > img {
+
+        height: 26px;
+    
+    }
+
 
 }

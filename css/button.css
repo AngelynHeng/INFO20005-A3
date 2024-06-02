@@ -79,13 +79,24 @@ button:hover{
 
 @media(max-width: 770px){
 
-.content-container > .big-button {
-    display: none;
-}
+    .content-container > .big-button {
+        display: none;
+    }
 
-.content-container > .smaller-button {
-    font-size: var(--text-xxs);
-    display: block;
-}
+    .content-container > .smaller-button {
+        font-size: var(--text-xxs);
+        display: block;
+    }
+
+    .checkout, .paypal{
+
+        padding: 10px 10px;
+        width: 130px;
+        height: 38px;
+    }
+
+    .checkout{
+        font-size: var(--text-sm);
+    }
 
 }
