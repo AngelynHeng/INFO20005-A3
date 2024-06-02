@@ -12,31 +12,24 @@ function removeFromCart(itemId){
 if (localStorage.getItem("cartStatus" + "201") == "1")  {
 
     document.getElementById("201-add-small").innerHTML = 'added to cart'
+    document.getElementById("201-add-small").style.backgroundColor = "var(--darker-red)";
+    document.getElementById("201-add").style.backgroundColor = "var(--darker-red)"; 
     document.getElementById("201-add").innerHTML = 'added to cart'
     
-} else if ((localStorage.getItem("cartStatus" + "201") == "0")){
-
-    document.getElementById("201-add-small").innerHTML = 'add to cart'
-    document.getElementById("201-add").innerHTML = 'add to cart'
 }
 
 if (localStorage.getItem("cartStatus" + "202") == "1")  {
     
     document.getElementById("202-add-small").innerHTML = 'added to cart'
+    document.getElementById("202-add-small").style.backgroundColor = "var(--darker-red)";
+    document.getElementById("202-add").style.backgroundColor = "var(--darker-red)"; 
     document.getElementById("202-add").innerHTML = 'added to cart' 
     
-}else if((localStorage.getItem("cartStatus"+ "202") == "0")){
-
-    document.getElementById("202-add-small").innerHTML = 'add to cart'
-    document.getElementById("202-add").innerHTML = 'add to cart'
 }
-
-
 
 function addToCart(itemId){
 
     localStorage.setItem('cartStatus'+ itemId, '1');
-    console.log(addedToCart)
 
 }
 
@@ -47,11 +40,33 @@ if (addToCart == "yes"){
 }
 
 
+// item 201 
+
+document.getElementById("201-add").addEventListener("click", function() {
+    
+    document.getElementById("201-add").innerHTML= "Added to Cart"
+    document.getElementById("201-add").style.backgroundColor = "var(--darker-red)";
+    addToCart('201');
+
+});
+
+//item 202 small 
+
+document.getElementById("201-add-small").addEventListener("click", function(){
+
+    document.getElementById("201-add-small").innerHTML= "Added to Cart";
+    document.getElementById("201-add-small").style.backgroundColor = "var(--darker-red)";
+    console.log("hello small");
+
+})
+
+
 // Item 202
 
 document.getElementById("202-add").addEventListener("click", function() {
 
     document.getElementById("202-add").innerHTML= "Added to Cart"
+    document.getElementById("202-add").style.backgroundColor = "var(--darker-red)";
     addToCart('202');
 
 });
@@ -63,26 +78,9 @@ document.getElementById("202-add").addEventListener("click", function() {
 document.getElementById("202-add-small").addEventListener("click", function(){
 
     document.getElementById("202-add-small").innerHTML= "Added to Cart";
+    document.getElementById("202-add-small").style.backgroundColor = "var(--darker-red)";
     console.log("hello small");
 
 })
 
-
-// item 201 
-
-document.getElementById("201-add").addEventListener("click", function() {
-
-    document.getElementById("201-add").innerHTML= "Added to Cart"
-    addToCart('201');
-
-});
-
-//item 202 small 
-
-document.getElementById("201-add-small").addEventListener("click", function(){
-
-    document.getElementById("201-add-small").innerHTML= "Added to Cart";
-    console.log("hello small");
-
-})
 

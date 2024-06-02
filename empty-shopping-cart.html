@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart</title>
+    <title>TEST SHORT PAGE cart</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-
-<body>  
 
     <header>
         <nav>        
@@ -46,34 +45,82 @@
         </nav>
         
     </header>
-
-
+    
     <main>
+
+
 
         <section>
 
             <div class="page-header"> 
-
-                <div class="icon_wrapper">
-
-                    <img src="Images/back-grey.svg" class="icon" id="back-icon" onclick="history.back()">
-                    <p id="clear-cart"> clear cart </p>
-
-                </div>
-
                 
-                <h4> Shopping Cart</h3>
+                <h4> Shopping Cart </h3>
+                <p class="empty-cart"> [0] </p>
 
 
             </div>
 
         </section>
 
-        <section class="cart-items" id="cart-contents">
 
 
+        <div class="product-banner-container"> 
 
-        </section>
+            <div class="product clickable--product">
+    
+                <img class="product__image"src="Images/Product-image/201.png">
+                <p class="product__title"> Digital Birthday Card </p>
+                <p class="product__code" id="201"> No. 201</p>
+
+            </div>
+
+            <div class="product clickable--product">
+    
+                <img class="product__image"src="Images/Product-image/202.png">
+                <p class="product__title"> Digital Birthday Card </p>
+                <p class="product__code" id="202"> No. 202</p>
+
+            </div>
+
+            <div class="product nonclickable--product">
+    
+                <img class="product__image"src="Images/Product-image/201.png">
+                <p class="product__title"> Digital Birthday Card </p>
+                <p class="product__code"> No. 201</p>
+
+            </div>
+
+            <div class="product nonclickable--product">
+
+                <img class="product__image"src="Images/Product-image/201.png">
+                <p class="product__title"> Digital Birthday Card </p>
+                <p class="product__code"> No. 201</p>
+
+            </div>
+
+            <div class="product nonclickable--product">
+
+                <img class="product__image"src="Images/Product-image/201.png">
+                <p class="product__title"> Digital Birthday Card </p>
+                <p class="product__code"> No. 201</p>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="shop-all"> 
+
+            <a href="product-list.html" class="shop-all-button-link">
+                <div class="shop__all__button"> 
+                    <p> Shop all </p>
+                    <img src="Images/Arrow-right-white.svg">
+                </div>
+            </a>
+        </div>
+ 
+    
 
     </main>
 
@@ -111,9 +158,8 @@
 
     </footer>
 
-<script src="cart-items.js"></script>
-
-
+    <script src="product.js"> </script>
+    <script src="cart.js"> </script>
 
 </body>
 </html>

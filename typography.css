@@ -43,6 +43,18 @@
 
     text-transform: uppercase;
 
+    /*  Preset Colors */
+    
+    --dark-yellow: #E79E48;
+    --beige: #F9EDDD;
+    --darker-beige: #E2B381;
+    --red: #F97D84;
+    --darker-red: #F33E45;
+    --blue:  #A0CCEF;
+    --darker-blue: #64A3E0;
+    --white: #FFFFFF;
+    --black: #000000;
+    --grey: #BCBCBC;
 }
 
 
@@ -76,6 +88,7 @@ body{
     font-size: var(--text-base-size);
     font-family: var(--font-primary);
     line-height: var(--body-line-height);
+    color: var(--black);
 
 }
 
@@ -83,21 +96,21 @@ h1{
     font-family: var(--font-secondary);
     font-size: var(--heading-size);
     line-height: var(--heading-line-height);
-    color: #E79E48;
+    color: var(--dark-yellow);
 }
 
 h2{
     font-family: var(--font-secondary);
     font-size: var(--text-xxxl);
     line-height: var(--heading-line-height);
-    color: white;
+    color: var(--white);
 }
 
 h3, h4{
     font-family: var(--font-secondary);
     font-size: var(--text-xxl);
     line-height: var(--heading-line-height);
-    color: #E79E48;
+    color: var(--dark-yellow);
 }
 
 p, span {

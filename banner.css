@@ -22,17 +22,17 @@
 }
 
 .banner--shop{
-    background-color:#F9EDDD;
-    color: #EDCCA5;
+    background-color:var(--beige);
+    color: var(--darker-beige);
 }
 
 .banner--card{
-    background-color: #A0CCEF;
-    color:#64A3E0;
+    background-color: var(--blue);
+    color: var(--darker-blue);
 }
 
 .banner--wemoments{
 
-    background-color: #F97D84 ;
-    color: #F33E45;
+    background-color: var(--red) ;
+    color: var(--darker-red);
 }

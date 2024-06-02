@@ -35,9 +35,7 @@
                 </div>
     
                 <div class="icon_wrapper">
-                    <a href="shopping-cart.html">
-                        <img src="Images/Cart.svg" class="icon">
-                    </a>
+                    <img src="Images/Cart.svg" id=shopping-cart-icon class="icon">
                     <img src="Images/Heart.svg" class="icon">
                     <img src="Images/profile.svg" class="icon">
                 </div>      
@@ -51,7 +49,7 @@
 
         <section class="navigation_icons">
 
-            <div class="page_header"> 
+            <div class="page-header"> 
 
                 <div class="icon_wrapper">
 
@@ -90,7 +88,8 @@
                 <div class="row__three"> 
 
                     <p> $10.00 </p>
-                    <button> add to cart </button>
+                    <button class="smaller-button" id="202-add"> Add to Cart </button>
+                    <button class="xs_button" id="202-add-small"> Add to Cart </button>
 
                 </div>
 
@@ -149,75 +148,88 @@
 
        </div>
 
-        <section class="product_banner"> 
+       <section class="product_banner"> 
 
-            <div class="product_banner_subheading">
+        <div class="product_banner_subheading">
 
-                <p> Recommended </p>
+            <h3> Birthday </h3>
+            <p> Digital Birthday Cards</p>
+
+        </div>
+
+        <div class="product-banner-container"> 
+
+            <div class="product clickable--product">
     
+                <img class="product__image"src="Images/Product-image/201.png">
+                <p class="product__title"> Digital Birthday Card </p>
+                <p class="product__code" id="201"> No. 201</p>
+                <button class="smaller-button" id="201-add"> Add to Cart </button>
+                <button class="xs_button" id="201-add-small"> Add to Cart </button>
+                <img class="heart__icon"src="Images/Heart-red.svg" class="icon">
+
             </div>
-    
-            <div class="product_banner_container"> 
 
-                <div class="product clickable--product">
+            <div class="product nonclickable--product">
     
-                    <img class="product__image"src="Images/Product-image/201.png">
-                    <p class="product__title"> Digital Birthday Card </p>
-                    <p class="product__code"> No. 201</p>
-                    <button class="smaller_button" id="201" onclick="getId(this)"> Add to Cart </button>
-                    <button class="xs_button" id="201" onclick="getId(this)"> Add to Cart </button>
-                    <img class="heart__icon"src="Images/Heart-red.svg" class="icon">
-    
-                </div>
-    
-                <div class="product nonclickable--product">
-    
-                    <img class="product__image"src="Images/Product-image/201.png">
-                    <p class="product__title"> Digital Birthday Card </p>
-                    <p class="product__code"> No. 201</p>
-                    <button class="smaller_button" id="201"> Add to Cart </button>
-                    <button class="xs_button" id="201"> Add to Cart </button>
-                    <img class="heart__icon"src="Images/Heart-red.svg" class="icon">
-    
-                </div>
-    
-                <div class="product nonclickable--product">
-    
-                    <img class="product__image"src="Images/Product-image/201.png">
-                    <p class="product__title"> Digital Birthday Card </p>
-                    <p class="product__code"> No. 201</p>
-                    <button class="smaller_button" id="201"> Add to Cart </button>
-                    <button class="xs_button" id="201"> Add to Cart </button>
-                    <img class="heart__icon"src="Images/Heart-red.svg" class="icon">
-    
-                </div>
-    
-                <div class="product nonclickable--product">
-    
-                    <img class="product__image"src="Images/Product-image/201.png">
-                    <p class="product__title"> Digital Birthday Card </p>
-                    <p class="product__code"> No. 201</p>
-                    <button class="smaller_button" id="201"> Add to Cart </button>
-                    <button class="xs_button" id="201"> Add to Cart </button>
-                    <img class="heart__icon"src="Images/Heart-red.svg" class="icon">
-    
-                </div>
-    
-                <div class="product nonclickable--product">
-    
-                    <img class="product__image"src="Images/Product-image/201.png">
-                    <p class="product__title"> Digital Birthday Card </p>
-                    <p class="product__code"> No. 201</p>
-                    <button class="smaller_button" id="201"> Add to Cart </button>
-                    <button class="xs_button" id="201"> Add to Cart </button>
-                    <img class="heart__icon"src="Images/Heart-red.svg" class="icon">
-    
-                </div>    
-    
+                <img class="product__image"src="Images/Product-image/201.png">
+                <p class="product__title"> Digital Birthday Card </p>
+                <p class="product__code"> No. 201</p>
+                <button class="smaller-button" id="201"> Add to Cart </button>
+                <button class="xs_button" id="201"> Add to Cart </button>
+                <img class="heart__icon"src="Images/Heart-red.svg" class="icon">
+
             </div>
-     
+            
+
+            <div class="product nonclickable--product">
     
-           </section>
+                <img class="product__image"src="Images/Product-image/201.png">
+                <p class="product__title"> Digital Birthday Card </p>
+                <p class="product__code"> No. 201</p>
+                <button class="smaller-button" id="201"> Add to Cart </button>
+                <button class="xs_button" id="201"> Add to Cart </button>
+                <img class="heart__icon"src="Images/Heart-red.svg" class="icon">
+
+            </div>
+
+            <div class="product nonclickable--product">
+
+                <img class="product__image"src="Images/Product-image/201.png">
+                <p class="product__title"> Digital Birthday Card </p>
+                <p class="product__code"> No. 201</p>
+                <button class="smaller-button" id="201"> Add to Cart </button>
+                <button class="xs_button" id="201"> Add to Cart </button>
+                <img class="heart__icon"src="Images/Heart-red.svg" class="icon">
+
+            </div>
+
+            <div class="product nonclickable--product">
+
+                <img class="product__image"src="Images/Product-image/201.png">
+                <p class="product__title"> Digital Birthday Card </p>
+                <p class="product__code"> No. 201</p>
+                <button class="smaller-button" id="201"> Add to Cart </button>
+                <button class="xs_button" id="201"> Add to Cart </button>
+                <img class="heart__icon"src="Images/Heart-red.svg" class="icon">
+
+            </div>
+
+
+        </div>
+
+        <div class="shop-all"> 
+
+            <a href="product-list.html" class="shop-all-button-link">
+                <div class="shop__all__button"> 
+                    <p> Shop all </p>
+                    <img src="Images/Arrow-right-white.svg">
+                </div>
+            </a>
+        </div>
+ 
+
+       </section>
 
     </main>
     
@@ -255,7 +267,21 @@
     </footer>
 
     <script src="product.js"> </script>
-    <script src="cart.js"> </script>
+    <script src="cart.js"></script>
+
+    <script>
+
+
+        if (localStorage.getItem("cartStatus" + "202") == "1")  {
+            
+            document.getElementById("202-add-small").innerHTML = 'added to cart'
+            document.getElementById("202-add-small").style.backgroundColor = "var(--darker-red)";
+            document.getElementById("202-add").style.backgroundColor = "var(--darker-red)"; 
+            document.getElementById("202-add").innerHTML = 'added to cart' 
+            
+        }
+
+    </script>
 
 </body>
 </html>

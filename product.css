@@ -136,7 +136,7 @@ section.product_description_box{
             grid-template-columns: 140px 20px;
         }
         
-        .smaller_button{
+        .smaller-button{
             display: none;
         }
     

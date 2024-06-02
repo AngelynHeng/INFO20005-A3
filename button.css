@@ -12,8 +12,8 @@ button {
 
     font-family: 'Lemonmilk';
     text-align: center;
-    background-color: black;
-    color: white;
+    background-color: var(--black);
+    color: var(--white);
     font-size: var(--text-sm);
     text-transform: uppercase;
     font-weight: bold;
@@ -23,15 +23,21 @@ button {
 
 }
 
+button:hover{
+
+    background-color: var(--darker-red);
+
+}
+
 
 /* Smaller button used for "add to cart", "all product" etc */
 
-.smaller_button {
+.smaller-button {
 
     font-size: var(--text-sm);
     font-weight: 600;
     padding: 12px 20px 10px;
-    background-color: black;
+    background-color: var(--black);
 
 }
 
@@ -43,18 +49,18 @@ button {
     font-size: var(--text-xxs);
     font-weight: 500;
     padding: 8px 15px;
-    background-color: black;
+    background-color: var(--black);
 
 
 }
 
 @media(max-width: 770px){
 
-.content_container > .big_button {
+.content-container > .big-button {
     display: none;
 }
 
-.content_container > .smaller_button {
+.content-container > .smaller-button {
     font-size: var(--text-xxs);
     display: block;
 }

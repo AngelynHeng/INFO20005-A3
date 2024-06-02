@@ -45,7 +45,7 @@ if (display201 == "yes"){
     <p class="cart__item__name"> Digital Birthday Card </p>
     <p class="cart__item__price"> $10.00</p>
     <p class="cart__item__code" id="201"> No. 201</p>
-    <button class="smaller_button" id="201-remove"> Remove </button>
+    <button class="smaller-button" id="201-remove"> Remove </button>
     
     </div>
     
@@ -55,9 +55,16 @@ if (display201 == "yes"){
 
     document.getElementById("201-remove").addEventListener("click", function() {
 
-        console.log("remove 201");
         document.getElementById("cart-contents").removeChild(cartItem201);
         removeFromCart('201');
+
+        console.log(document.getElementById("cart-contents").childElementCount)
+        if (document.getElementById("cart-contents").childElementCount == 0){
+
+            console.log("cart is empty")
+            window.location.href= "empty-shopping-cart.html"
+        
+        }
     
     })
 
@@ -78,7 +85,7 @@ if (display202 == "yes"){
     <p class="cart__item__name"> Digital Birthday Card </p>
     <p class="cart__item__price"> $10.00</p>
     <p class="cart__item__code" id="202"> No. 202</p>
-    <button class="smaller_button" id="202-remove"> Remove </button>
+    <button class="smaller-button" id="202-remove"> Remove </button>
 
     </div>
 
@@ -90,11 +97,32 @@ if (display202 == "yes"){
 
         document.getElementById("cart-contents").removeChild(cartItem202);
         removeFromCart('202');
+
+        console.log(document.getElementById("cart-contents").childElementCount)
+        if (document.getElementById("cart-contents").childElementCount == 0){
+
+            console.log("cart is empty")
+            window.location.href= "empty-shopping-cart.html"
+        
+        }
     
     })
 
 
 }
 
+
+document.getElementById("clear-cart").addEventListener("click", function(){
+
+    document.getElementById("cart-contents").innerHTML = "";
+    if (document.getElementById("cart-contents").childElementCount == 0){
+
+        console.log("cart is empty")
+        window.location.href= "empty-shopping-cart.html"
     
-    
+    }
+    localStorage.clear();
+
+})
+
+
