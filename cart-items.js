@@ -1,4 +1,3 @@
-    //remove 201 
 
 var display201 = "no"
 var display202 = "no"
@@ -24,6 +23,9 @@ if (localStorage.getItem("cartStatus" + "202") == "1")  {
     
     display202 = "yes"; 
     
+} else if((localStorage.getItem("cartStatus"+ "202") == "0")){
+
+    display202 = "no";
 }
 
 
