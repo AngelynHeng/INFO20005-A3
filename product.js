@@ -12,6 +12,7 @@ window.onbeforeunload = function () {
   }
 
 
+
 // Code to direct users to empty or shopping cart page w content depending on local storage length
 
 
@@ -61,3 +62,4 @@ function myFunction(e) {
     }
 }
 }
+

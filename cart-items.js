@@ -35,7 +35,6 @@ if (localStorage.getItem("cartStatus" + "202") == "1")  {
 }
 
 
-
 if (display201 == "yes"){
 
 
@@ -63,6 +62,7 @@ if (display201 == "yes"){
     document.getElementById("201-remove").addEventListener("click", function() {
 
         document.getElementById("cart-contents").removeChild(cartItem201);
+        display201= "no";
         removeFromCart('201');
 
         if (document.getElementById("cart-contents").childElementCount == 1){
@@ -114,6 +114,7 @@ if (display202 == "yes"){
     document.getElementById("202-remove").addEventListener("click", function() {
 
         document.getElementById("cart-contents").removeChild(cartItem202);
+        display202= "no";
         removeFromCart('202');
 
         if (document.getElementById("cart-contents").childElementCount == 1){
@@ -162,4 +163,22 @@ document.getElementById("clear-cart").addEventListener("click", function(){
 
 })
 
+
 // Redirect users to checkout page
+
+document.getElementById("checkout-button").addEventListener("click", function(){
+
+    if(display201 == "yes" && display202 == "yes"){
+        window.location.href= "order-summary-two.html";
+    }
+    
+    if(display201 == "yes" && display202 == "no"){
+        window.location.href= "order-summary-201.html";
+    }
+    
+    if(display201 == "no" && display202 == "yes"){
+        window.location.href= "order-summary-202.html";
+    }
+
+})
+

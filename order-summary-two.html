@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Summary</title>
+    <title>Order Summary Two</title>
     <link rel="stylesheet" href="main.css">
 
 </head>
@@ -48,19 +48,21 @@
 
     <main>
         
-        <div class="form_header">
-            <div class="form_icon">
-                <img src="Images/cross.svg" class="icon">
+        <section id="order-heading-box">
+
+                
+            <h4 id="your-order"> your order</h3>
+            <a href="shopping-cart.html">
+                <img src="Images/cross.svg" class="icon" id="return-to-cart">
+            </a>
             </div>
 
-        </div>
+    </section>
 
-        <div class="form_header">
-            <h4> Your Order</h4>
-        </div>
-      
+        <section id="section-two">
+
         <div class="order_summary_wrapper">
-            <form action="" class="order_summary">
+            <form action="" class="order_summary" id="two-item">
 
                 <div class="order_summary_content">
 
@@ -75,8 +77,13 @@
                 </div>
                 <hr class="solid">
                 <div class="order_summary_content">
-                    <span> Subtotal </span>
+                    <span> Digital Birthday Card No.202 x 1 </span>
                     <span> $10.00 </span>
+                </div>
+                <hr class="solid">
+                <div class="order_summary_content">
+                    <span> Subtotal </span>
+                    <span> $20.00 </span>
                 </div>
                 <hr class="solid">
                 <div class="order_summary_content">
@@ -86,14 +93,14 @@
 
                 <hr class="solid">
 
-                <div class="email_input">
-                    <div> Please provide email </div>
-                    <input type="email">
+                <div class="email-input"> 
+                    <div class="prompt"> Please provide email </div>
+                    <div class="email-field-box"> </div>
                 </div>
-            
+
                 <div class="order_summary_content">
                     <span> Total </span>
-                    <span> $10.00 </span>
+                    <span> $20.00 </span>
                 </div>
             
                 <div class="payment_option">
@@ -121,21 +128,22 @@
                 </div>
     
             </form>
-        </div>
-
-        <button> Place Order </button>
 
 
-        </div>
+            <button class="place-order" id="place-order-button"> Place Order </button>
+
+                        
+        </section>  
+
     </main>
 
 
     <footer>
-      
         
     </footer>
     
     <script src="product.js"> </script>
     <script src="cart.js"> </script>
+
 </body>
 </html>

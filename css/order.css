@@ -3,6 +3,9 @@
 .order_summary_wrapper{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
 }
 
 .order_summary{
@@ -11,10 +14,17 @@
     border-radius: 10px;
     margin-inline: 1.5rem;;
     padding: 32px 20px 20px 20px;
+    margin-bottom: 30px;
     width: 400px;
-    height: 480px;
+    height: 620px;
     justify-self: center;
     text-transform: uppercase;
+
+}
+
+#two-item{
+
+    height: 690px;
 
 }
 
@@ -36,15 +46,23 @@
 }
 
 
-.email_input{
+.email-input{
     display: flex;
     flex-direction: column;
     row-gap: 10px;
     margin-top: 20px;
 }
 
-.email_input > div{
+.email-input > div{
     align-self: flex-start;
+}
+
+.email-field-box{   
+
+    width: 400px;
+    height: 20px;
+    border: 1px solid
+
 }
 
 .payment_option{
@@ -103,4 +121,76 @@
     justify-content: center;
     align-items: center;
     
+}
+
+.order_summary > hr{
+
+    margin: 0;
+    width: 380px;
+    opacity: .2;
+
+}
+
+#order-heading{
+    width: 470px;
+
+}
+
+#order-heading-box{
+
+    gap: 60px;
+
+}
+
+#order-heading-box > a > img{
+
+    padding-top: 20px;
+
+}
+
+@media (max-width: 700px){
+
+    .order_summary_wrapper{
+        width: 350px;
+        height: 730px;
+        text-align: left;
+    }
+
+    .order_summary{
+        width: 290px;
+        align-self: center;
+
+    }
+
+    .order_summary_content{
+
+        line-height: 1.2;
+    }
+
+    .order_summary > hr{
+        
+        width: 290px;
+    }
+
+    .email-field-box{
+        width: 290px;
+    }
+
+    #order-heading-box > a > img{
+
+        padding-top: 9px;
+    
+    }
+
+    #section-two{
+
+        padding-top:40px;
+    
+    }
+
+    #section-two > .order_summary_wrapper{
+
+        height: 800px;
+    }
+
 }

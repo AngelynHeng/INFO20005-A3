@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary 202</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+
+    <header>
+        <nav>        
+           <div class="navcontent">
+
+                <div class="menu">
+                    <img src="Images/Menu.svg" class="icon">
+                 </div>
+
+                <div class="logo">
+                    <a href="index.html">
+                    <img src="Images/Large Logo.svg">
+                    </a>
+                </div>
+
+                <div class="smalllogo">
+                    <a href="index.html">
+                    <img src="Images/small Logo.svg" class="smalllogo">
+                    </a>
+                </div>
+
+                <div class="search"> 
+                    <img src="Images/Search.svg" class="icon">
+                    <input class="search-input" type="search" placeholder=Search>
+    
+                </div>
+    
+                <div class="icon_wrapper">
+                    <img src="Images/Cart.svg" id=shopping-cart-icon class="icon">
+                    <img src="Images/Heart.svg" class="icon">
+                    <img src="Images/profile.svg" class="icon">
+                </div>      
+            </div>
+   
+        </nav>
+        
+    </header>
+
+    <main>
+        
+        <section id="order-heading-box">
+
+                
+            <h4 id="your-order"> your order</h3>
+            <a href="shopping-cart.html">
+                <img src="Images/cross.svg" class="icon" id="return-to-cart">
+            </a>
+            </div>
+
+    </section>
+
+        <section>
+
+        <div class="order_summary_wrapper">
+            <form action="" class="order_summary">
+
+                <div class="order_summary_content">
+
+                    <span> Product </span>
+                    <span> Subtotal </span>
+        
+                </div>
+                <hr class="solid">
+                <div class="order_summary_content" id="summary-product">
+                    <span> Digital Birthday Card No.202 x 1 </span>
+                    <span> $10.00 </span>
+                </div>
+                <hr class="solid">
+                <div class="order_summary_content">
+                    <span> Subtotal </span>
+                    <span> $10.00 </span>
+                </div>
+                <hr class="solid">
+                <div class="order_summary_content">
+                <span> Shipping </span>
+                <span> Free (Via Email) </span>
+                </div>
+
+                <hr class="solid">
+
+                <div class="email-input"> 
+                    <div class="prompt"> Please provide email </div>
+                    <div class="email-field-box"> </div>
+                </div>
+
+                <div class="order_summary_content">
+                    <span> Total </span>
+                    <span> $10.00 </span>
+                </div>
+            
+                <div class="payment_option">
+
+                    <div class="payment_radio">
+                        <input type="radio" id="DBT" name="payment_option" value="direct_bank_transfer">
+                        <label for="DBT">Direct Bank Transfer</label>
+                    </div>
+                    
+                    <div class="payment_radio">
+                        <input type="radio" id="paypal" name="payment_option" value="paypal">
+                        <label for="DBT">Paypal</label>
+                    </div>
+                    
+                    <div class="payment_radio">
+                        <input type="radio" id="credit_cards" name="payment_option" value="credit_cards">
+                        <label for="DBT">Credit cards</label>
+                    </div>
+
+                    <div class="payment_radio">
+                        <input type="radio" id="FPX" name="payment_option" value="FPX_online_banking">
+                        <label for="DBT">FPX online banking</label>
+                    </div>
+                    
+                </div>
+    
+            </form>
+
+
+            <button class="place-order" id="place-order-button"> Place Order </button>
+
+                        
+        </section>  
+
+    </main>
+
+
+    <footer>
+        
+    </footer>
+    
+    <script src="product.js"> </script>
+    <script src="cart.js"> </script>
+
+</body>
+</html>

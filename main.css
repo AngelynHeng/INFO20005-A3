@@ -181,7 +181,6 @@ a{
 }
 
 
-
 /* empty card section */
 
 .shop-all{
@@ -291,6 +290,7 @@ hr {
     .content-container > .subtext{
         font-size: var(--text-xxs);
     }
+
 }
 
 
