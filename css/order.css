@@ -96,33 +96,6 @@
     width: 16px;
 }
 
-.confirmation_icon > img{
-    width: 100px;
-}
-
-.confirmation_wrapper{
-    display: flex;
-    justify-content: center;
-    height: 100%;
-}
-
-.confirmation_content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 20rem;
-    padding: 10px;
-    gap: 3px;
-    align-self: center;
-}
-
-.confirmation_content{
-
-    justify-content: center;
-    align-items: center;
-    
-}
-
 .order_summary > hr{
 
     margin: 0;
@@ -146,6 +119,42 @@
 
     padding-top: 20px;
 
+}
+
+/* Order Confirmation page */
+
+
+.confirmation_icon > img{
+    width: 250px;
+}
+
+.confirmation_wrapper{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.confirmation_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30rem;
+    padding: 10px;
+    gap: 5px;
+    align-self: center;
+}
+
+.confirmation_content > p{
+
+    line-height: 1.5;
+    margin-bottom: 25px;
+
+}
+
+.confirmation_content > a >button{
+
+    margin-top: 40px;   
+    margin-bottom: 170px;
 }
 
 @media (max-width: 700px){

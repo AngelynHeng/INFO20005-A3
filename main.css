@@ -3,7 +3,7 @@
 
 @import url(typography.css); /* Fonts style, colors, spacing, line height  */
 
-@import url(homepage.css);
+@import url(homepage.css); /* css style for homepage */
 
 @import url(css/button.css);  /* Style for buttons used  */
 
