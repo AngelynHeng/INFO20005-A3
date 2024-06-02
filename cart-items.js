@@ -1,4 +1,3 @@
-
 history.scrollRestoration = "manual";
 
 window.onbeforeunload = function () {
@@ -40,7 +39,6 @@ if (localStorage.getItem("cartStatus" + "202") == "1")  {
 if (display201 == "yes"){
 
 
-
     let cartItem201 = document.createElement('div');
     cartItem201.classList.add("item__box");
     cartItem201.innerHTML = 
@@ -60,10 +58,19 @@ if (display201 == "yes"){
     
     document.getElementById("cart-contents").append(cartItem201);
 
+    console.log(document.getElementById("cart-contents").childElementCount)
+
     document.getElementById("201-remove").addEventListener("click", function() {
 
         document.getElementById("cart-contents").removeChild(cartItem201);
         removeFromCart('201');
+
+        if (document.getElementById("cart-contents").childElementCount == 1){
+            console.log("there is 2 items")
+            document.getElementById("price").innerHTML = "$10.00"
+            document.getElementById("current-cart").innerHTML = "[1]"
+        }        
+        
 
         console.log(document.getElementById("cart-contents").childElementCount)
         if (document.getElementById("cart-contents").childElementCount == 0){
@@ -101,12 +108,22 @@ if (display202 == "yes"){
 
     document.getElementById("cart-contents").append(cartItem202);
 
+    console.log(document.getElementById("cart-contents").childElementCount)
+
     document.getElementById("202-remove").addEventListener("click", function() {
 
         document.getElementById("cart-contents").removeChild(cartItem202);
         removeFromCart('202');
 
+        if (document.getElementById("cart-contents").childElementCount == 1){
+            console.log("there is 2 items")
+            document.getElementById("price").innerHTML = "$10.00"
+            document.getElementById("current-cart").innerHTML = "[1]"
+        }        
+        
+
         console.log(document.getElementById("cart-contents").childElementCount)
+
         if (document.getElementById("cart-contents").childElementCount == 0){
 
             console.log("cart is empty")
@@ -119,6 +136,14 @@ if (display202 == "yes"){
 
 
 }
+
+if (document.getElementById("cart-contents").childElementCount == 2){
+    console.log("there is 2 items")
+    document.getElementById("price").innerHTML = "$20.00"
+    document.getElementById("current-cart").innerHTML = "[2]"
+}
+
+
 
 
 document.getElementById("clear-cart").addEventListener("click", function(){
@@ -133,5 +158,3 @@ document.getElementById("clear-cart").addEventListener("click", function(){
     localStorage.clear();
 
 })
-
-

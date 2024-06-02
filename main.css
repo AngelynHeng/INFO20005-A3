@@ -162,6 +162,12 @@ a{
     width: max-content;
 }
 
+.empty-cart{
+    font-size: var(--text-xl);
+    height: max-content;
+    align-self: flex-end;
+}
+
 .empty--cart > p{
     font-size: var(--text-xl);
     height: max-content;

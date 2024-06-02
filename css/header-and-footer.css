@@ -136,6 +136,14 @@ nav {
     color:#FFFFFF;
 }
 
+.beige--copyright{
+
+    background-color: var(--beige);
+}
+
+.beige--copyright > p {
+    color: var(--black);
+}
 
 /* Back-to-top section */
 

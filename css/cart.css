@@ -74,3 +74,35 @@
     color: var(--darker-red);
 
 }
+
+/* Cart total */
+
+.cart-total{
+    margin: 140px 0px;
+    display: flex;
+    width: 800px;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.cart-total > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.cart-total > hr {
+    width: 800px;
+    margin: 0;
+    opacity: .1;
+}
+
+.cart-total > p:first-of-type {
+    font-size: var(--text-xl);
+    text-align: left;
+}
+
+.cart-total > div > p{
+    font-size: var(--text-lg);
+
+}
