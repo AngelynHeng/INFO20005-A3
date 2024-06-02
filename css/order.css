@@ -151,7 +151,7 @@
 
 }
 
-.confirmation_content > a >button{
+.confirmation_content > a > button{
 
     margin-top: 40px;   
     margin-bottom: 170px;
@@ -168,16 +168,13 @@
     .order_summary{
         width: 290px;
         align-self: center;
-
     }
 
     .order_summary_content{
-
         line-height: 1.2;
     }
 
-    .order_summary > hr{
-        
+    .order_summary > hr{  
         width: 290px;
     }
 
@@ -186,20 +183,20 @@
     }
 
     #order-heading-box > a > img{
-
         padding-top: 9px;
-    
     }
 
     #section-two{
-
         padding-top:40px;
-    
     }
 
     #section-two > .order_summary_wrapper{
-
         height: 800px;
+    }
+
+    .confirmation_icon > img{
+        width: 150px;
+        padding-top: 80px;
     }
 
 }

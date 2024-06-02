@@ -42,7 +42,7 @@
 
 .nonclickable--product {
 
-    opacity: 0.5;
+    opacity: 0.4;
 }
 .nonclickable--product > button{
     cursor:default;
