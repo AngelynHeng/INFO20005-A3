@@ -160,4 +160,12 @@
         background-color: var(--black);
 
     }
+
+    /* Media Query for cart total */
+    .cart-total{
+
+        width: 300px;
+
+    }
+
 }
