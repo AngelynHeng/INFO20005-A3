@@ -169,7 +169,7 @@ section.product_description_box{
 
 
 
-/*  Media query for product list, grid change from showing 3 items per row to 2 when screen width < 800 */
+/*  Media query for product list page only, grid change from showing 3 items per row to 2 when screen width < 800 */
 
 
 @media(max-width: 800px){

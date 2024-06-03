@@ -93,26 +93,21 @@ nav {
 }
 
 .footer_main_text > h3 {
-
     color: black;
 }
 
 .footercontent > p{
-
     line-height: 24px;
-    color: #DA9449
-
+    color: #DA9449;
 }
 
 .footercontent >p:last-of-type{
-
     padding-bottom: 40px;
 }
 
 /* Copyright Section */
 
 .copyright {
-
     padding-top:5px;
     padding-bottom:5px;
     height:30px;
@@ -120,13 +115,11 @@ nav {
 }
 
 .copyright > p{
-
     height: 30px;
     color:#FFFFFF;
 }
 
 .beige--copyright{
-
     background-color: var(--beige);
 }
 
@@ -137,7 +130,6 @@ nav {
 /* Back-to-top section */
 
 .Back_To_Top{
-
     flex-direction: column;
     display: flex;
 
@@ -155,19 +147,16 @@ nav {
 
 
 .icon_wrapper{
-
     width: 180px;
     display: flex;
     justify-content: space-between;
     align-self: center;
-
 }
 
 
 /* Copyright Footer (Stick to bottom) */
 
 .copyright_footer{
-
     display: flex;
     justify-content: center;
     margin-top: auto;
@@ -176,7 +165,6 @@ nav {
     background-color: #000000;
     color: #FFFFFF;
     justify-content:center;
-
 }
 
 .copyright_footer > p{

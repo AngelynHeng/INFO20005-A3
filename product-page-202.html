@@ -269,13 +269,12 @@
 
     <script>
 
+        // code to ensure add to cart button style is consistent depending on if item has already been added to cart even on refresh
         if (localStorage.getItem("cartStatus" + "202") == "1")  {
-            
-            document.getElementById("202-add-small").innerHTML = 'added to cart'
+            document.getElementById("202-add-small").innerHTML = 'added to cart';
             document.getElementById("202-add-small").style.backgroundColor = "var(--darker-red)";
             document.getElementById("202-add").style.backgroundColor = "var(--darker-red)"; 
-            document.getElementById("202-add").innerHTML = 'added to cart' 
-            
+            document.getElementById("202-add").innerHTML = 'added to cart';
         }
 
     </script>

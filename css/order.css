@@ -9,7 +9,6 @@
 }
 
 .order_summary{
-
     border:2px solid var(--grey);
     border-radius: 10px;
     margin-inline: 1.5rem;;
@@ -19,13 +18,10 @@
     height: 620px;
     justify-self: center;
     text-transform: uppercase;
-
 }
 
 #two-item{
-
     height: 690px;
-
 }
 
 
@@ -58,11 +54,9 @@
 }
 
 .email-field-box{   
-
     width: 400px;
     height: 20px;
     border: 1px solid
-
 }
 
 .payment_option{
@@ -97,28 +91,21 @@
 }
 
 .order_summary > hr{
-
     margin: 0;
     width: 380px;
     opacity: .2;
-
 }
 
 #order-heading{
     width: 470px;
-
 }
 
 #order-heading-box{
-
     gap: 60px;
-
 }
 
 #order-heading-box > a > img{
-
     padding-top: 20px;
-
 }
 
 /* Order Confirmation page */
@@ -145,14 +132,11 @@
 }
 
 .confirmation_content > p{
-
     line-height: 1.5;
     margin-bottom: 25px;
-
 }
 
 .confirmation_content > a > button{
-
     margin-top: 40px;   
     margin-bottom: 170px;
 }
@@ -164,36 +148,28 @@
         height: 730px;
         text-align: left;
     }
-
     .order_summary{
         width: 290px;
         align-self: center;
     }
-
     .order_summary_content{
         line-height: 1.2;
     }
-
     .order_summary > hr{  
         width: 290px;
     }
-
     .email-field-box{
         width: 290px;
     }
-
     #order-heading-box > a > img{
         padding-top: 9px;
     }
-
     #section-two{
         padding-top:40px;
     }
-
     #section-two > .order_summary_wrapper{
         height: 800px;
     }
-
     .confirmation_icon > img{
         width: 150px;
         padding-top: 80px;
