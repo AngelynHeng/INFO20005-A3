@@ -3,7 +3,6 @@
 /* .cart-items */
 
 .item__box{
-
     border: black;
     border-width: 2px;
     border-style: solid;
@@ -15,67 +14,49 @@
 }
 
 .item__grid{
-
     display: grid;
     grid-template-columns: 160px 650px;
     grid-template-rows: 40px 20px 110px 60px;
     grid-template-areas: 
         "";
-
-
 }
 
 .cart__item__image{
-
     width: 150px;
 }
 
 .cart__item__name{
-
     grid-column-start: 2;
     grid-row-start: 1;
     text-align: left;
     font-size: var(--text-lg);
-
 }
 
 .cart__item__price{
-
     grid-column-start:2;
     grid-row-start: 1;
     text-align: right;
     font-size: var(--text-lg);
-    
-
 }
 
 .cart__item__code{
-
     grid-column-start: 2;
     grid-row-start: 2;
     text-align: left;
     font-size: var(--text-xs);
-
-
 }
 
 .item__grid > button {
-
     grid-column-start: 2;
     grid-row-start: 4;
     justify-self: right;
 }
 
-
-/*  Clear cart   */
-
 .icon_wrapper > p {
-
     color: var(--darker-red);
-
 }
 
-/* Cart total */
+/* Cart total section of shopping cart */
 
 .cart-total{
     margin: 140px 0px;
@@ -104,20 +85,15 @@
 
 .cart-total > div > p{
     font-size: var(--text-lg);
-
 }
 
 .paypal > img {
-
     height: 38px;
-
 }
 
 .checkout-section{
-
     display: flex;
     gap: 40px;
-
 }
 
 /* Media query for cart with item */
@@ -125,40 +101,32 @@
 @media (max-width: 700px){
 
     .item__box{
-
        width: 300px;
        height: 150px;
     }
 
     .item__grid{
-
         grid-template-columns: 110px 200px;
         grid-template-rows: 20px 20px 60px 60px;
-
     }
 
     .cart__item__image{
-
         width: 100px;
     }
 
     .cart__item__name, .cart__item__price{
-
         font-size: var(--text-xxs);
     }
 
     .cart__item__code{
-
         font-size: var(--text-xxxs);
     }
 
     .item__grid > button {
-
         font-size: var(--text-xxs);
         font-weight: 500;
         padding: 8px 15px;
         background-color: var(--black);
-
     }
 
     /* Cart total */
@@ -178,10 +146,7 @@
     /* checkout section */
 
     .paypal > img {
-
         height: 26px;
-    
     }
-
 
 }

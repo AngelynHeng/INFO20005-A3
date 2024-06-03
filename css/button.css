@@ -1,7 +1,7 @@
+
 /* deafault button / larger ver of button used for  */
 
 button {
-
     width: fit-content;
     height: max-content;
     cursor: pointer;
@@ -19,47 +19,37 @@ button {
     font-weight: bold;
 
     align-self: center;
-
-
 }
 
 button:hover{
-
     background-color: var(--darker-red);
-
 }
 
 
 /* Smaller button used for "add to cart", "all product" etc */
 
 .smaller-button {
-
     font-size: var(--text-sm);
     font-weight: 600;
     padding: 12px 20px 10px;
     background-color: var(--black);
-
 }
 
 /* Even smaller button for mobile resolution */
 
 .xs_button{
-    
-
     font-size: var(--text-xxs);
     font-weight: 500;
     padding: 8px 15px;
     background-color: var(--black);
-
-
 }
 
-.checkout, .place-order {
+/* other buttons*/
 
+.checkout, .place-order {
     font-size: var(--text-lg);
     font-weight: 600;
     padding: 17px 60px;
-
 }
 
 .paypal{
@@ -73,7 +63,6 @@ button:hover{
 }
 
 .paypal:hover{
-    
     background-color: #FFC439;
 }
 
@@ -82,29 +71,22 @@ button:hover{
     .content-container > .big-button {
         display: none;
     }
-
     .content-container > .smaller-button {
         font-size: var(--text-xxs);
         display: block;
     }
-
     .checkout, .paypal{
-
         padding: 10px 10px;
         width: 130px;
         height: 38px;
     }
-
     .checkout, .place-order{
         font-size: var(--text-sm);
     }
-
     .place-order{
-
         padding: 5px 10px;
         width: 200px;
         height: 45px;
-
     }
 
 }

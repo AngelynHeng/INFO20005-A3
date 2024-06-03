@@ -1,7 +1,6 @@
 /* CSS for section Dividers */
 
 .banner{
-    
     display:flex;
     gap: 15px;
     overflow:hidden;
@@ -13,12 +12,10 @@
 }
 
 .banner__text {
-
     font-weight: bolder;
     padding-top: 4px;
     font-size: larger;
     text-transform:uppercase;
-
 }
 
 .banner--shop{
@@ -32,7 +29,6 @@
 }
 
 .banner--wemoments{
-
     background-color: var(--red) ;
     color: var(--darker-red);
 }
